@@ -13,20 +13,33 @@ body {
 
 
 .mainContainer {
-    width: 100%;
+    width: 90%;
+    margin-top:10rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    perspective: 10000px;
+    perspective: 1000px;
+    border:5px green solid;
 
+}
+
+#message{
+    margin-bottom: 10px;
+    padding:10px;
 }
 
 .card {
     position: relative;
-    width: 100%;
-    height: 500px;
+    width:80%;
+    max-width: 900px;
+    min-width: 300px;
+    /* margin-top: 14rem; */
+    /* margin-bottom: 5rem; */
+    height: 300px;
     transition: all 1s ease;
     transform-style: preserve-3d;
+    border:2px dashed red;
 }
 
 .mainView,
@@ -48,7 +61,11 @@ body {
 
 }
 
-.mainContainer:hover .card {
+/* .mainContainer:hover .card:hover {
+    transform: rotateY(180deg);
+} */
+
+ .card:hover {
     transform: rotateY(180deg);
 }
 
