@@ -1,9 +1,12 @@
+
+
 body {
     min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("img/newFam.jpeg")
+    background-image: url("https://photos.app.goo.gl/Vkvu1sdRYY3UKN2Q8");
+   
 }
 
 
@@ -13,6 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     perspective: 10000px;
+
 }
 
 .card {
@@ -23,8 +27,8 @@ body {
     transform-style: preserve-3d;
 }
 
-.front,
-.back {
+.mainView,
+.details {
     position: absolute;
     background: #FEC606;
     top: 0;
@@ -45,6 +49,6 @@ body {
     transform: rotateY(180deg);
 }
 
-.back {
+.details {
     transform: rotateY(180deg);
 }
