@@ -3,7 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px dashed green;
+    background-image: url("img/newFam.jpeg")
 }
 
 
@@ -13,8 +13,6 @@ body {
     justify-content: center;
     align-items: center;
     perspective: 10000px;
-    border: 4px dashed red;
-
 }
 
 .card {
@@ -23,7 +21,6 @@ body {
     height: 300px;
     transition: all 1s ease;
     transform-style: preserve-3d;
-    border: 2px solid green;
 }
 
 .front,
