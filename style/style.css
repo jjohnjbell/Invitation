@@ -29,10 +29,10 @@ body {
     transform-style: preserve-3d;
 }
 
-.mainView,
-.details {
+#invite,
+#details {
     position: absolute;
-    background:rgba(133,422,255,.9);
+    background:rgba(133,422,255,.6);
     top: 0;
     left: 0;
     width: 100%;

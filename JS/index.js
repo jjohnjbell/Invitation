@@ -1,11 +1,32 @@
-const detailsBtn = document.getElementById("showDetails")
-const inviteBtn = document.getElementById("showInvite")
+const showInvite = document.getElementById("details")
+const showDetails = document.getElementById("invite")
+const showInviteBtn = document.getElementById("showInviteBtn")
+const showDetailsBtn = document.getElementById("showDetailsBtn")
 const mainContainer = document.getElementById("mainContainer")
 const card = document.getElementById("card")
-const details = document.getElementById("details")
-const btn = document.getElementsByTagName('button')
 
+//Add Event to Details Button
+// showInviteBtn.addEventListener("click", function (){
+//     console.log("hello")
+//     // swap()
+// })
 
+// //Add Event to Invite Button
+showDetailsBtn.addEventListener("click", function (){
+    console.log("details")
+    showInvite.style.transform="rotateY(180deg)"
+    card.style.transform="rotateY(180deg)"
+   // mainContainer.style.transform="rotateY(180deg)"
+    
+    // swap()
+})
+
+// function swap(){
+//     showDetails.style.transform="rotateY(180deg)"
+//     showInvite.style.transform="rotateY(180deg)"
+//     card.style.transform="rotateY(180deg)"
+//     mainContainer.style.transform="rotateY(180deg)"
+// }
 
 /*.mainContainer:hover .card {
     transform: rotateY(180deg);
@@ -13,23 +34,3 @@ const btn = document.getElementsByTagName('button')
 .details {
     transform: rotateY(180deg);
 }*/
-
-
-//Add Event to Details Button
-inviteBtn.addEventListener("click", function (){
-    details.style.transform="rotateY(180deg)"
-    card.style.transform="rotateY(180deg)"
-// mainContainer.style.transform="rotateY(180deg)"
-
-console.log("hello")
-    
-})
-
-
-// //Add Event to Invite Button
-detailsBtn.addEventListener("click", function (){
-  console.log("details")
-  details.style.transform="rotateY(180deg)"
-    card.style.transform="rotateY(180deg)"
-})
-
