@@ -6,6 +6,8 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url("/img/newFam.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
    
 }
 
@@ -22,7 +24,7 @@ body {
 .card {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 500px;
     transition: all 1s ease;
     transform-style: preserve-3d;
 }
@@ -30,7 +32,7 @@ body {
 .mainView,
 .details {
     position: absolute;
-    background: #FEC606;
+    background:rgba(133,422,255,.9);
     top: 0;
     left: 0;
     width: 100%;
@@ -43,6 +45,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 30px;
+
 }
 
 .mainContainer:hover .card {
