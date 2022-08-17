@@ -27,4 +27,4 @@ showDetailsBtn.addEventListener("click", function (){
 }
 .details {
     transform: rotateY(180deg);
-}*/
+
