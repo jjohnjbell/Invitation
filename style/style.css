@@ -10,18 +10,12 @@
  }
 #master {
     /* position:sticky; */
-   /* width:100%; */
-   /* max-width: ; */
-   width: 1250px;
+   width:100%;
    height: fit-content;
-    /* min-height: 500px; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     background-image: url("/img/newFam.jpeg");
     background-size:cover;
     background-repeat: no-repeat;
-    /* background-position: 0 50px; */
+    /* background-position: 10% 0; */
     border:3px solid blue;
    
 }
@@ -35,7 +29,7 @@
     justify-content: center;
     align-items: center;
     perspective: 10000px;
-    border:10px dashed green;
+    border:2px dashed green;
 }
 
 .card {
@@ -71,7 +65,7 @@
 .memories{
 border:3px purple solid;
 color:white;
-border-radius: 10%;
+border-radius: 3%;
 width:95%;
 min-height: 200px;
 }
@@ -80,7 +74,7 @@ min-height: 200px;
 background-image: url(/img/pics/Friends.jpg);
 image-rendering: optimizeQuality;
 background-size:cover;
-background-position: 0px 49%;
+background-position: 0px 52%;
 /* background-repeat: round; */
 }
 
@@ -95,6 +89,7 @@ background-position: 0px 40%;
 background-image: url(/img/pics/Future.jpg);
 image-rendering: optimizeQuality;
 background-size: cover;
+background-position: 0px 52%;
 }
 .memories h3{
     padding:0;
