@@ -19,6 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     perspective: 10000px;
+    border:10px dashed green;
 }
 
 .card {
@@ -28,7 +29,13 @@ body {
     height: 500px;
     transition: all 1s ease;
     transform-style: preserve-3d;
+    border:4px dashed red;
 }
+
+#info{
+    border:2px dashed purple;
+}
+
 
 #invite,
 #details {
@@ -47,7 +54,6 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 30px;
-
 }
 
 button{
