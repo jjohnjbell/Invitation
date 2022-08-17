@@ -68,7 +68,8 @@ min-height: 200px;
 #friends{
 background-image: url(/img/pics/Friends.jpg);
 image-rendering: optimizeQuality;
-background-size:cover;
+background-size:contain;
+background-repeat: round;
 }
 
 #fiance{
@@ -101,10 +102,19 @@ background-size: cover;
 }
 
 
+
+
+.bgc{
+    background:rgba(118, 77, 250, 0.218);
+    
+}
+
+
+
 #invite,
 #details {
     position: absolute;
-    background:rgba(133,422,255,.6);
+    
     top: 0;
     left: 0;
     width: 100%;
