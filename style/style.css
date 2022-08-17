@@ -1,16 +1,27 @@
 
-
-body {
-    margin-top:30px;
-    margin-left:70px;
-    margin-right:70px;
+ /* margin-top:30px;
+ margin-left:70px;
+ margin-right:70px; */
+ body{
+    margin:0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+#master {
+    /* position:sticky; */
+   /* width:100%; */
+   /* max-width: ; */
+   width: 1250px;
+   height: fit-content;
     /* min-height: 500px; */
     /* display: flex;
     justify-content: center;
     align-items: center; */
     background-image: url("/img/newFam.jpeg");
-    background-repeat:space;
     background-size:cover;
+    background-repeat: no-repeat;
+    /* background-position: 0 50px; */
     border:3px solid blue;
    
 }
@@ -68,14 +79,16 @@ min-height: 200px;
 #friends{
 background-image: url(/img/pics/Friends.jpg);
 image-rendering: optimizeQuality;
-background-size:contain;
-background-repeat: round;
+background-size:cover;
+background-position: 0px 49%;
+/* background-repeat: round; */
 }
 
 #fiance{
 background-image: url(/img/pics/Fiance.jpeg);
 image-rendering: optimizeQuality;
 background-size: cover;
+background-position: 0px 40%;
 }
 
 #future{
@@ -94,6 +107,9 @@ background-size: cover;
     margin-left:50%;
 }
 
+#fiance:hover h3 {
+    margin-left:70%;
+}
 
 #updates{
     padding:1%;
@@ -105,7 +121,7 @@ background-size: cover;
 
 
 .bgc{
-    background:rgba(118, 77, 250, 0.218);
+    background:rgba(230, 230, 230, 0.218);
     
 }
 
