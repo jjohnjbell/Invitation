@@ -18,6 +18,7 @@ showDetailsBtn.addEventListener("click", function (){
     console.log("details")
     showInvite.style.transform="rotateY(180deg)"
     card.style.transform="rotateY(180deg)"
+    
 })
 
 
