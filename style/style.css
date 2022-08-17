@@ -58,12 +58,29 @@ body {
 }
 
 .memories{
+
 border:3px purple solid;
 color:white;
 border-radius: 10%;
 width:95%;
-height:30%;
+min-height: 10%;
 }
+
+.memories h3{
+    padding:0;
+    margin:0;
+    transition-property:margin-left;
+    transition-duration: 5s;
+
+
+}
+
+.memories:hover h3{
+    margin-left:50%;
+}
+
+
+
 
 
 
