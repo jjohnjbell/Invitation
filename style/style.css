@@ -58,32 +58,40 @@ body {
 }
 
 .memories{
-
 border:3px purple solid;
 color:white;
 border-radius: 10%;
 width:95%;
-min-height: 10%;
+min-height: 200px;
 }
 
+#friends{
+background-image: url(/img/pics/Friends.jpg);
+image-rendering: optimizeQuality;
+background-size:cover;
+}
+
+#fiance{
+background-image: url(/img/pics/Fiance.jpeg);
+image-rendering: optimizeQuality;
+background-size: cover;
+}
+
+#future{
+background-image: url(/img/pics/Future.jpg);
+image-rendering: optimizeQuality;
+background-size: cover;
+}
 .memories h3{
     padding:0;
     margin:0;
     transition-property:margin-left;
     transition-duration: 5s;
-
-
 }
 
 .memories:hover h3{
     margin-left:50%;
 }
-
-
-
-
-
-
 
 
 #updates{
