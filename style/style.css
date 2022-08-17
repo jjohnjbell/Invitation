@@ -41,6 +41,7 @@ body {
     transition: all 1s ease;
     transform-style: preserve-3d;
     border:2px dashed red;
+    
 }
 
 .mainView,
