@@ -2,9 +2,9 @@
 
 body {
     min-height: 500px;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     background-image: url("/img/newFam.jpeg");
     background-repeat:space;
     background-size:cover;
@@ -32,8 +32,22 @@ body {
     border:4px dashed red;
 }
 
-#info{
+#subContainer{
+    width: 100%;
+    height:fit-content;
     border:2px dashed purple;
+    display:flex;
+    justify-content: space-around;
+}
+
+#memoryLane{
+    border: 3px dashed rgb(225, 185, 38);
+    width:70rem;
+}
+
+#updates{
+    border: 3px dashed white;
+    width:30rem;
 }
 
 
