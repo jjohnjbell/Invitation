@@ -6,48 +6,34 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url("/img/newFam.jpeg");
-    background-repeat: no-repeat;
+    background-repeat:space;
     background-size:cover;
    
 }
 
 
+
 .mainContainer {
-    width: 90%;
-    margin-top:10rem;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    perspective: 1000px;
-    border:5px green solid;
-
-}
-
-#message{
-    margin-bottom: 10px;
-    padding:10px;
-    color:white;
+    perspective: 10000px;
 }
 
 .card {
+    display: inline-block;
     position: relative;
-    width:90%;
-    max-width: 900px;
-    min-width: 300px;
-    /* margin-top: 14rem; */
-    /* margin-bottom: 5rem; */
-    height: 300px;
+    width: 100%;
+    height: 500px;
     transition: all 1s ease;
     transform-style: preserve-3d;
-    border:2px dashed red;
-    
 }
 
-.mainView,
-.details {
+#invite,
+#details {
     position: absolute;
-    background:rgba(133,422,255,.9);
+    background:rgba(133,422,255,.6);
     top: 0;
     left: 0;
     width: 100%;
@@ -57,20 +43,29 @@ body {
     box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
     backface-visibility: hidden;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 30px;
 
 }
 
-/* .mainContainer:hover .card:hover {
-    transform: rotateY(180deg);
-} */
+button{
+    position:absolute;
+    bottom:0;
+    margin: 0 0 .3rem 0;
+    border:2px green solid;
+}
 
- .card:hover {
-    transform: rotateX(180deg);
+
+
+
+
+
+/* .mainContainer:hover .card {
+    transform: rotateY(180deg);
 }
 
 .details {
-    transform: rotateX(180deg);
-}
+    transform: rotateY(180deg);
+} */
