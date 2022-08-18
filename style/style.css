@@ -3,7 +3,7 @@
  margin-left:70px;
  margin-right:70px; */
  body{
-    margin:0px;
+    margin:1px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -13,7 +13,7 @@
    width:100%;
    height: fit-content;
     background-image: url("/img/newFam.jpeg");
-    background-size:cover;
+    background-size:100% 100%;
     background-repeat: no-repeat;
     /* background-position: 10% 0; */
     border:3px solid blue;
@@ -55,34 +55,37 @@
     padding: 1%;
     width:100%;
     display:flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 6rem;
 
 }
 
 .memories{
 border:3px purple solid;
 color:white;
-border-radius: 3%;
-width:95%;
-min-height: 200px;
+border-radius: 50%;
+width:180px;
+height: 180px;
 }
 
 #friends{
-background-image: url(/img/pics/Friends.jpg);
+background-image: url("/img/pics/Friends.jpg");
 image-rendering: optimizeQuality;
-background-size:cover;
-background-position: 0px 52%;
-/* background-repeat: round; */
+background-size:100% 100%;
+background-repeat:no-repeat;
+background-position:center;
+
 }
+
+
 
 #fiance{
 background-image: url(/img/pics/Fiance.jpeg);
 image-rendering: optimizeQuality;
-background-size: cover;
-background-position: 0px 40%;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-position: center;
 }
 
 #future{
