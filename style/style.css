@@ -97,17 +97,23 @@ background-position: 0px 52%;
 .memories h3{
     padding:0;
     margin:0;
-    transition-property:margin-left;
-    transition-duration: 5s;
+    text-align: center;
+    margin-top:80%;
+    visibility: hidden;
+    transition-property:margin,visibility;
+    transition-duration: 8s;
+    text-shadow:1px 1px 10px purple;
+
 }
 
 .memories:hover h3{
-    margin-left:50%;
+    margin-top:2%;
+    visibility: visible;
 }
 
-#fiance:hover h3 {
+/* #fiance:hover h3 {
     margin-left:70%;
-}
+} */
 
 #updates{
     padding:1%;
