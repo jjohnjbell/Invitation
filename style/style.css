@@ -89,6 +89,7 @@ button {
     /* border: 3px dashed rgb(225, 185, 38); */
     padding: 1%;
     width: 100%;
+    height:fit-content;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -102,6 +103,7 @@ button {
     border-radius: 50%;
     width: 180px;
     height: 180px;
+    margin-bottom: 10px;
 }
 
 #friends {
@@ -141,6 +143,12 @@ button {
     transition-duration: 2s;
     text-shadow: 1px 1px 10px purple;
 
+}
+
+.memories span{
+    font-size: 80px;
+    line-height: .6em;
+    opacity: 0.2;
 }
 
 /* .memories:hover h3{
