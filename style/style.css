@@ -87,14 +87,14 @@ button {
     height: fit-content;
     border: 2px dashed rgb(6, 128, 0);
     background: rgba(230, 230, 230, 0.2);
-    display: flex;
+
     /* justify-content: space-around; */
 }
 
 #memoryLane {
-    /* border: 3px dashed rgb(225, 185, 38); */
+    border: 3px dashed rgb(225, 185, 38);
     padding: 1%;
-    width: 100%;
+    width: 97%;
     height:fit-content;
     display: flex;
     justify-content: space-around;
@@ -151,11 +151,28 @@ h3 {
 
 }
 
-.memories span{
-    font-size: 80px;
-    line-height: .6em;
-    opacity: 0.2;
+#quotes{
+ border:thick 3px blue;
+ background: rgba(230, 230, 230, 0.2);
+ display:flex;
+ justify-content: space-around;
+ gap:6em;
+ align-items: center;
+
 }
+
+.comments{
+    width:20%;
+    height:70px;
+    text-align: center;
+    border:solid 3px rgb(41, 207, 105);
+}
+
+.comments span{
+    text-align: left;
+    
+}
+
 
 /* .memories:hover h3{
 
