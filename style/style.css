@@ -84,10 +84,11 @@ button {
 
 #subContainer {
     width: 100%;
-    height: fit-content;
+    margin-bottom:0px;
+    /* height: fit-content; */
     border: 2px dashed rgb(6, 128, 0);
     background: rgba(230, 230, 230, 0.2);
-
+    padding-bottom:0px;
     /* justify-content: space-around; */
 }
 
@@ -95,7 +96,8 @@ button {
     border: 3px dashed rgb(225, 185, 38);
     padding: 1%;
     width: 97%;
-    height:fit-content;
+    margin-bottom:0px;
+    /* height:fit-content; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -109,7 +111,7 @@ button {
     border-radius: 50%;
     width: 180px;
     height: 180px;
-    margin-bottom: 10px;
+    margin-bottom: -9px;
 }
 
 #friends {
@@ -162,14 +164,28 @@ h3 {
 }
 
 .comments{
+    background:rgba(216, 216, 216, 0.481);
+    border-radius: 30%;
+    position:relative;
     width:20%;
-    height:70px;
-    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(0, 0, 0);
+    text-shadow: 0 0 8px white;
+    height:200px;
+    /* text-align: bottom; */
     border:solid 3px rgb(41, 207, 105);
 }
 
 .comments span{
-    text-align: left;
+    position:absolute;
+    top:0;
+    left:0;
+    font-size: 80px;
+    opacity: .6;   
+    padding:0;
+    margin: 0; 
     
 }
 
