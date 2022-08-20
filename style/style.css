@@ -1,16 +1,22 @@
 /* margin-top:30px;
  margin-left:70px;
  margin-right:70px; */
+
 body {
     margin: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-image: url("/img/newFam.jpeg"); */
+    /* filter:blur(4px); */
+    /* background-size: 100% 100%; */
+    /* background-repeat: no-repeat; */
+    /* filter:blur(5px);    */
 }
 
 #master {
     /* position:sticky; */
-    width: 100%;
+    width: 80%;
     height: fit-content;
     background-image: url("/img/newFam.jpeg");
     background-size: 100% 100%;
@@ -98,7 +104,7 @@ button {
 }
 
 .memories {
-    /* border: 3px purple solid; */
+    border: 3px purple solid;
     color: white;
     border-radius: 50%;
     width: 180px;
@@ -132,7 +138,7 @@ button {
     background-position: 0px 52%;
 }
 
-.memories h3 {
+h3 {
     padding: 0;
     margin: 0;
     margin-top: 80%;
