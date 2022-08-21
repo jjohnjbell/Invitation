@@ -31,6 +31,11 @@ body {
     margin-top:2%;    
 }
 
+.ourThanks:hover{
+    transform:scale(1.01);
+}
+
+
 #parter{
     background-color:rgba(128, 128, 128, 0.396);
     height:3px;
@@ -45,7 +50,7 @@ body {
     width:40%;
     height:100%;
     background-color:rgb(206, 206, 206);
-    border:2px solid pink;
+    /* border:2px solid rgb(255, 255, 255); */
     padding:8% 5%;
     border-radius:6%;
     font-size:larger;
@@ -87,19 +92,15 @@ img{
     align-items: center;
     perspective: 10000px;
     background:rgba(167, 165, 165, 0.397);
-    /* border: 2px dashed green; */
 }
 
 .card {
-    background:black;
     display: inline-block;
     border-radius: 1%;
-    /* position: absol; */
     width: 100%;
     height: 350px;
     transition: all 1s ease;
     transform-style: preserve-3d;
-    /* border: 4px dashed red; */
 }
 
 #invite,
@@ -162,7 +163,7 @@ img{
 .invitation{
     position:absolute;
     visibility:hidden;
-    font-family: monospace;
+    font-style: italic;
     font-weight: bolder;
 }
 
@@ -270,7 +271,7 @@ img{
     border-radius: 50%;
     width: 180px;
     height: 180px;
-    border:2px violet solid;
+    border:2px rgb(210, 209, 210) solid;
     /* margin-bottom: -9px; */
 }
 
@@ -335,7 +336,6 @@ h3 {
     color:rgb(0, 0, 0);
     text-shadow: 0 0 8px white;
     height:200px;
-    border:solid 3px white;
 }
 
 .comments span{
@@ -354,11 +354,10 @@ h3 {
 }
 
 .memories:hover h3 {
-    margin-top: 2%;
+    margin-top: 3%;
     visibility: visible;
 }
 
 .memories:hover{
     transform: scale(1.01);
-    
 }
