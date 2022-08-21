@@ -24,6 +24,8 @@ body {
     margin-top:5%;
     min-height: 500px;
     text-align:center;
+    padding-top:1px;
+    margin-bottom:100px;
 }
 
 .ourThanks{
@@ -32,18 +34,35 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin-top:2%;
+    margin-top:5%;
 }
 
 .textResponses{
     width:40%;
-    height:25%;
+    height:100%;
+    background-color:rgb(206, 206, 206);
+    border:2px solid pink;
+    padding:8% 5%;
+    border-radius:6%;
+    font-size:larger;
+}
+
+#shaeComments{
+    margin-top:2%;
+}
+
+#joshComments{
+    margin-bottom:7%;
 }
 
 img{
     width:25%;
     height:25%;
     border-radius: 40%;
+}
+
+#joshPic{
+    transform: scaleY(-1);
 }
 
 
