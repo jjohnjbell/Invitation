@@ -86,17 +86,17 @@ button {
     width: 100%;
     margin-bottom:0px;
     /* height: fit-content; */
-    border: 2px dashed rgb(6, 128, 0);
-    background: rgba(230, 230, 230, 0.2);
+    /* border: 2px dashed rgb(6, 128, 0); */
+    /* background: rgba(230, 230, 230, 0.2); */
     padding-bottom:0px;
     /* justify-content: space-around; */
 }
 
 #memoryLane {
-    border: 3px dashed rgb(225, 185, 38);
+    /* border: 3px dashed rgb(225, 185, 38); */
     padding: 1%;
     width: 97%;
-    margin-bottom:0px;
+    /* margin-bottom:0px; */
     /* height:fit-content; */
     display: flex;
     justify-content: space-around;
@@ -111,7 +111,7 @@ button {
     border-radius: 50%;
     width: 180px;
     height: 180px;
-    margin-bottom: -9px;
+    /* margin-bottom: -9px; */
 }
 
 #friends {
@@ -138,6 +138,7 @@ button {
     image-rendering: optimizeQuality;
     background-size: cover;
     background-position: 0px 52%;
+    margin-right:-20px;
 }
 
 h3 {
@@ -154,8 +155,8 @@ h3 {
 }
 
 #quotes{
- border:thick 3px blue;
- background: rgba(230, 230, 230, 0.2);
+ /* border:thick 20px blue;
+ background: rgba(230, 230, 230, 0.2); */
  display:flex;
  justify-content: space-around;
  gap:6em;
@@ -187,6 +188,10 @@ h3 {
     padding:0;
     margin: 0; 
     
+}
+
+#futureComments{
+    text-align: center;
 }
 
 
