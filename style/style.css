@@ -24,8 +24,7 @@ body {
     margin-top:5%;
     min-height: 500px;
     text-align:center;
-    padding-top:1px;
-    margin-bottom:100px;
+    padding:1px 0px;
 }
 
 .ourThanks{
@@ -34,7 +33,17 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin-top:5%;
+    margin-top:2%;    
+}
+
+#parter{
+    background-color:rgba(128, 128, 128, 0.396);
+    height:3px;
+    width:98%;
+    margin: auto auto;
+    margin-top:1%;
+    border-radius: 3%;
+    box-shadow: 0 0 6px 2px rgb(198, 195, 195);
 }
 
 .textResponses{
@@ -52,7 +61,7 @@ body {
 }
 
 #joshComments{
-    margin-bottom:7%;
+    margin-bottom:3%;
 }
 
 img{
@@ -62,7 +71,7 @@ img{
 }
 
 #joshPic{
-    transform: scaleY(-1);
+    transform: scaleX(-1);
 }
 
 
