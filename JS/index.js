@@ -9,6 +9,7 @@ const card = document.getElementById("card")
 showInviteBtn.addEventListener("click", function (){
     showDetails.style.transform="rotateY(360deg)"
     card.style.transform="rotateY(360deg)"
+   
     console.log("hello")
 
 })
@@ -18,6 +19,7 @@ showDetailsBtn.addEventListener("click", function (){
     console.log("details")
     showInvite.style.transform="rotateY(180deg)"
     card.style.transform="rotateY(180deg)"
+    
   
 })
 

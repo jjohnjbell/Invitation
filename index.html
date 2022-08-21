@@ -4,25 +4,89 @@
 <head>
     <title> Hear the Bells !</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <div class="mainContainer" id="mainContainer">
-        <div class="card" id="card">
+    <div id="master">
+        <div class="mainContainer" id="mainContainer">
+            <div class="card" id="card">
+                <div id="details">
+                    <h1>Details</h1><br />
+                    <div id="information">
+                        <p><span class="updateTitle">Venue</span>:<span class="updates"> To be Announced</span></p>
+                        <p><span class="updateTitle">Date</span>:<span class="updates"> To be Announced</span></p>
+                        <p><span class="updateTitle">Time</span>:<span class="updates"> To be Announced</span></p>
+                    </div>
+                    <button id="showInviteBtn">Invite</button>
+                </div>
 
-            <div id="details">details
-                <button id="showInviteBtn">Invite</button>
+                <div id="invite">
+                    <h2 class="invitation" id="you">You</h2>
+                    <h2 class="invitation" id="are">Are</h2>
+                    <h2 class="invitation" id="invited">Invited</h2>
+
+                    <button id="showDetailsBtn">Details</button>
+                </div>
             </div>
-
-            <div id="invite">mainView
-                 <button id="showDetailsBtn">Details</button>
-            </div>
-
         </div>
+
+        <div id="secondSection">
+            <div class="ourThanks" id="shaeComments">
+                <img src="/img/pics/shaeSmile.png" alt="Shae's Thanks" />
+                <div class="textResponses"><i>"Thank you all so much for your help, prayers and support. </i></div>
+            </div>
+            <div id="parter"></div>
+            <div class="ourThanks" id="joshComments">
+                <div class="textResponses"><i>"We believe and accept that even the greatest needs a supportive community.
+                    Thank you all for being just that."</i></div>
+                <img id="joshPic" src="/img/pics/joshuaSmile.png" alt="Joshua's Thanks" />
+            </div>
+        </div>
+
+        <div id="thirdSection">
+            <div id="divider">
+                <h1>Learn about The Bells</h1>
+            </div>
+            <section id="subContainer">
+                <div id="memoryLane">
+
+                    <div class="memories" id="friends">
+                        <h3>Friends</h3>
+                    </div>
+
+                    <div class="memories" id="fiance">
+                        <h3>Fiance</h3>
+                    </div>
+
+                    <div class="memories" id="future">
+                        <h3>Future</h3>
+                    </div>
+                </div>
+            </section>
+            <section id="quotes">
+                <div class="comments" id="friendComments">
+                    <blockquote><span>❝</span>It started simple. There wasn't much to consider. We clicked. Our bond
+                        grew
+                        strong in a short time.</blockquote>
+                </div>
+                <div class="comments" id="fianceComments">
+                    <blockquote><span>❝</span> We took the big step! Joshua decided to stand up by taking the knee!
+                    </blockquote>
+                </div>
+                <div class="comments" id="futureComments">
+                    <blockquote><span>❝</span>The sky's the limit! Hearts filled, Future bright by the Grace of God.
+                    </blockquote>
+                </div>
+            </section>
+        </div>
+
+
+        <script src="JS/index.js"> </script>
     </div>
-
-
-    <script src="JS/index.js"> </script>
 </body>
 
 </html>
