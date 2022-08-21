@@ -71,19 +71,31 @@ body {
 
 .invitation{
     position:absolute;
-    /* visibility:hidden; */
+    visibility:hidden;
 }
 
     #you{
         top:40px;
         left:130px;
+        animation: you 6s ease;
+        animation-delay: 2s;
     }
+
     #are{
         top:40px;
         right:130px;
+        animation: you 5s ease;
+        animation-delay: 3s;
     }
     #invited{
         top:0px;
+        animation: you 4s ease;
+        animation-delay: 4s;
+    }
+
+    @keyframes you{ 
+        0% { visibility: hidden;}
+        100% { visibility: visible;}
     }
 
 
