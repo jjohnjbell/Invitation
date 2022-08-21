@@ -58,9 +58,10 @@ body {
 }
 
 #invite{
-    display:flex;
-    justify-content: center;
-    align-items:center;
+    /* display:flex;
+    justify-content: space-around;
+
+    align-items:center; */
     position:relative;
     background-image: url('/img/invite.jpeg');
     background-size: cover;
@@ -70,9 +71,20 @@ body {
 
 .invitation{
     position:absolute;
-    visibility:hidden;
+    /* visibility:hidden; */
 }
 
+    #you{
+        top:40px;
+        left:130px;
+    }
+    #are{
+        top:40px;
+        right:130px;
+    }
+    #invited{
+        top:0px;
+    }
 
 
 button {
