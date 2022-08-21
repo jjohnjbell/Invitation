@@ -8,14 +8,51 @@ body {
 #master {
     width: 80%;
     height: fit-content;
-    background-image: url("/img/newFam.jpeg");
+    /* background-image: url("/img/newFam.jpeg"); */
+    /* background:rgb(226, 170, 238); */
     background-size:cover;
     background-repeat: no-repeat;
-    background-position-y: 300px;
-    background-position-x: -30px;
+    /* background-position-y: 300px; */
+    background-position-x: -130px;
+    
 
 }
 
+#secondSection{
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 3%;
+    margin-top:5%;
+    min-height: 500px;
+    text-align:center;
+}
+
+.ourThanks{
+    border-radius:3%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top:2%;
+}
+
+.textResponses{
+    width:40%;
+    height:25%;
+}
+
+img{
+    width:25%;
+    height:25%;
+    border-radius: 40%;
+}
+
+
+#thirdSection{
+    margin-top:5%;
+    background-image: url("/img/newFam.jpeg");
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 3%;
+}
 
 
 .mainContainer {
@@ -32,6 +69,7 @@ body {
 .card {
     background:black;
     display: inline-block;
+    border-radius: 1%;
     /* position: absol; */
     width: 100%;
     height: 350px;
@@ -49,7 +87,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 1%;
     color: white;
     backface-visibility: hidden;
     display: flex;
@@ -171,9 +209,11 @@ body {
     color:white;
     text-align:center;
     text-shadow: 0px 5px 10px black;
-    font-family: 'Parisienne', cursive;
+    /* font-family: 'Parisienne', cursive; */
+    text-decoration: underline;
     font-size:x-large;  
     margin-top:0px;  
+    margin-bottom:45px;  
     padding-top:0px;
 }
 
@@ -197,7 +237,7 @@ body {
 }
 
 .memories {
-    border: 3px purple solid;
+    /* border: 3px green solid; */
     color: white;
     border-radius: 50%;
     width: 180px;
@@ -265,7 +305,7 @@ h3 {
     color:rgb(0, 0, 0);
     text-shadow: 0 0 8px white;
     height:200px;
-    border:solid 3px rgb(41, 207, 105);
+    border:solid 3px white;
 }
 
 .comments span{
