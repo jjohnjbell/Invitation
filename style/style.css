@@ -3,12 +3,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background:rgba(187, 187, 187, 0.902);
 }
 
 #master {
     width: 80%;
     height: fit-content;
- background: rgb(255, 254, 254); 
+ background: rgba(255, 254, 254,0); 
 
 }
 
@@ -240,6 +241,10 @@ img{
     padding-top:0px;
 }
 
+#divider:hover{
+    transform:scale(1.01);
+}
+
 #subContainer {
     width: 100%;
     margin-bottom:0px;
@@ -265,6 +270,7 @@ img{
     border-radius: 50%;
     width: 180px;
     height: 180px;
+    border:2px violet solid;
     /* margin-bottom: -9px; */
 }
 
@@ -305,7 +311,7 @@ h3 {
     margin-top: 80%;
     transition-property: margin, visibility;
     transition-duration: 2s;
-    text-shadow: 1px 1px 10px purple;
+    text-shadow: 3px 3px 2px purple;
 
 }
 
