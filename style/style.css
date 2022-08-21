@@ -72,6 +72,9 @@ body {
 .invitation{
     position:absolute;
     visibility:hidden;
+    /* font-family: 'Parisienne', cursive; */
+    font-family: monospace;
+    font-weight: bolder;
 }
 
     #you{
@@ -79,6 +82,7 @@ body {
         left:130px;
         animation: you 6s ease;
         animation-delay: 2s;
+        animation-iteration-count: 2;
     }
 
     #are{
@@ -91,8 +95,19 @@ body {
         top:0px;
         animation: you 4s ease;
         animation-delay: 4s;
-    }
+        }
 
+        button{
+            position:absolute;
+            animation: details 2s ease infinite;
+            animation-delay: 5s;
+        }
+
+        @keyframes details {
+            0% { background-color:violet;}
+            50% { background-color:purple; bottom:10px;}
+            100% { background-color:blue;bottom:0px;}
+        }
     @keyframes you{ 
         0% { visibility: hidden;}
         100% { visibility: visible;}
