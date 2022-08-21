@@ -8,13 +8,7 @@ body {
 #master {
     width: 80%;
     height: fit-content;
-    /* background-image: url("/img/newFam.jpeg"); */
-    /* background:rgb(226, 170, 238); */
-    background-size:cover;
-    background-repeat: no-repeat;
-    /* background-position-y: 300px; */
-    background-position-x: -130px;
-    
+ background: rgb(255, 254, 254); 
 
 }
 
@@ -78,6 +72,7 @@ img{
 #thirdSection{
     margin-top:5%;
     background-image: url("/img/newFam.jpeg");
+    background-size: cover;
     box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
     border-radius: 3%;
 }
@@ -273,6 +268,7 @@ img{
     /* margin-bottom: -9px; */
 }
 
+
 #friends {
     background-image: url('/img/pics/Friends.jpg');
     image-rendering: optimizeQuality;
@@ -356,5 +352,7 @@ h3 {
     visibility: visible;
 }
 
-
-
+.memories:hover{
+    transform: scale(1.01);
+    
+}
