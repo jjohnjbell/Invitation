@@ -67,6 +67,36 @@ body {
     background-position: 2% 20%;
 }
 
+#details{
+    background-color: rgba(170, 95, 241, 0.375);
+}
+
+#details h1{
+    position:absolute;
+    top:-40px;
+    left:41%;
+    font-style: italic;
+}
+
+.updateTitle{
+    font-style: italic;
+    color:antiquewhite;
+}
+
+.updates{
+    font-style:italic ;
+    font-size: x-large;
+}
+
+#information{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    line-height: 3px;
+}
+
 .invitation{
     position:absolute;
     visibility:hidden;
@@ -109,7 +139,7 @@ body {
             border:none;
             border-radius: 5%;
             padding:8px 20px;
-            animation: details 1s ease-in-out;
+            animation: details 1s ease-in;
             animation-iteration-count:infinite;
             animation-delay: 7s;
             animation-fill-mode: forwards;
@@ -121,9 +151,6 @@ body {
             0% { bottom: 0;visibility:hidden;}
             50% { bottom: 3px;visibility:visible;opacity: 1;}
             100% { bottom: 1;visibility:visible;opacity: 1;}
-            /* 50% { bottom: 10px;visibility:visible;opacity:.4;} */
-            /* 75% { bottom: 0;visibility:visible;opacity:.7;}
-            100% { bottom: 10px;visibility:visible;opacity:1;} */
         }
     @keyframes you{ 
         0% { visibility: hidden;}
