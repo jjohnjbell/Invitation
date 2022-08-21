@@ -25,12 +25,14 @@ body {
     justify-content: center;
     align-items: center;
     perspective: 10000px;
+    background:rgba(167, 165, 165, 0.397);
     /* border: 2px dashed green; */
 }
 
 .card {
+    background:black;
     display: inline-block;
-    position: relative;
+    /* position: absol; */
     width: 100%;
     height: 350px;
     transition: all 1s ease;
@@ -58,10 +60,6 @@ body {
 }
 
 #invite{
-    /* display:flex;
-    justify-content: space-around;
-
-    align-items:center; */
     position:relative;
     background-image: url('/img/invite.jpeg');
     background-size: cover;
@@ -72,54 +70,73 @@ body {
 .invitation{
     position:absolute;
     visibility:hidden;
-    /* font-family: 'Parisienne', cursive; */
     font-family: monospace;
     font-weight: bolder;
 }
 
     #you{
         top:40px;
-        left:130px;
+        left:0;
+        opacity: 0;
+        visibility: hidden;
         animation: you 6s ease;
-        animation-delay: 2s;
-        animation-iteration-count: 2;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
     }
 
     #are{
         top:40px;
-        right:130px;
-        animation: you 5s ease;
+        right:0;
+        opacity: 0;
+        visibility:hidden;
+        animation: are 5s ease;
+        animation-fill-mode: forwards;
         animation-delay: 3s;
     }
     #invited{
         top:0px;
-        animation: you 4s ease;
-        animation-delay: 4s;
+        opacity:0;
+        visibility: hidden;
+        animation: invited 4s ease;
+        animation-fill-mode: forwards;
+        animation-delay: 5s;
         }
 
         button{
             position:absolute;
-            animation: details 2s ease infinite;
-            animation-delay: 5s;
+            font-size:large;
+            font-weight: bold;
+            border:none;
+            border-radius: 5%;
+            padding:8px 20px;
+            animation: details 1s ease-in-out;
+            animation-iteration-count:infinite;
+            animation-delay: 7s;
+            animation-fill-mode: forwards;
+            bottom:0;
+            visibility: hidden;
         }
 
         @keyframes details {
-            0% { background-color:violet;}
-            50% { background-color:purple; bottom:10px;}
-            100% { background-color:blue;bottom:0px;}
+            0% { bottom: 0;visibility:hidden;}
+            50% { bottom: 3px;visibility:visible;opacity: 1;}
+            100% { bottom: 1;visibility:visible;opacity: 1;}
+            /* 50% { bottom: 10px;visibility:visible;opacity:.4;} */
+            /* 75% { bottom: 0;visibility:visible;opacity:.7;}
+            100% { bottom: 10px;visibility:visible;opacity:1;} */
         }
     @keyframes you{ 
         0% { visibility: hidden;}
-        100% { visibility: visible;}
+        100% { visibility: visible; opacity:1;left:130px}
     }
-
-
-button {
-    position: absolute;
-    bottom: 0;
-    margin: 0 0 .3rem 0;
-    /* border: 2px green solid; */
-}
+    @keyframes are{ 
+        0% { visibility: hidden;}
+        100% { visibility: visible; opacity:1;right:130px}
+    }
+    @keyframes invited{ 
+        0% { visibility: hidden;top:0}
+        100% { visibility: visible; opacity:1;top:2px}
+    }
 
 
 #divider {
@@ -136,11 +153,8 @@ button {
 #subContainer {
     width: 100%;
     margin-bottom:0px;
-    /* height: fit-content; */
     /* border: 2px dashed rgb(6, 128, 0); */
-    /* background: rgba(230, 230, 230, 0.2); */
     padding-bottom:0px;
-    /* justify-content: space-around; */
 }
 
 #memoryLane {
@@ -148,7 +162,6 @@ button {
     padding: 1%;
     width: 97%;
     /* margin-bottom:0px; */
-    /* height:fit-content; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -206,8 +219,7 @@ h3 {
 }
 
 #quotes{
- /* border:thick 20px blue;
- background: rgba(230, 230, 230, 0.2); */
+ /* border:thick 20px blue;*/
  display:flex;
  justify-content: space-around;
  gap:6em;
@@ -226,7 +238,6 @@ h3 {
     color:rgb(0, 0, 0);
     text-shadow: 0 0 8px white;
     height:200px;
-    /* text-align: bottom; */
     border:solid 3px rgb(41, 207, 105);
 }
 
@@ -245,24 +256,6 @@ h3 {
     text-align: center;
 }
 
-
-/* .memories:hover h3{
-
-    animation: effects 2s linear;
-}
-
-@keyframes effects{
-    0% {
-        visibility: hidden;
-        
-    }
-
-    100%{
-        visibility: visible;
-        display:block;
-        margin-top: 20%;
-    }
-} */
 .memories:hover h3 {
     margin-top: 2%;
     visibility: visible;
