@@ -106,20 +106,20 @@ img{
 #invite,
 #details {
     position: absolute;
-    background: rgba(230, 230, 230, 0.218);
+    background-color: rgba(182, 137, 236, 0.375);
     box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
     top: 0;
     left: 0;
+    color:white;
+    font-size: x-large;
     width: 100%;
     height: 100%;
     border-radius: 1%;
-    color: white;
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
 }
 
 #invite{
@@ -130,14 +130,11 @@ img{
     background-position: 2% 20%;
 }
 
-#details{
-    background-color: rgba(106, 101, 112, 0.375);
-}
 
 #details h1{
     position:absolute;
-    top:-40px;
-    left:41%;
+    top:0px;
+    left:45%;
     font-style: italic;
 }
 
@@ -154,10 +151,9 @@ img{
 #information{
     width:100%;
     display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:flex-start;
-    line-height: 3px;
+    justify-content: space-around;
+    align-items:center;
+    gap:4em;
 }
 
 .invitation{
@@ -250,7 +246,6 @@ img{
     color:white;
     text-align:center;
     text-shadow: 0px 5px 10px black;
-    /* font-family: 'Parisienne', cursive; */
     text-decoration: underline;
     font-size:x-large;  
     margin-top:0px;  
@@ -265,7 +260,6 @@ img{
 #subContainer {
     width: 100%;
     margin-bottom:0px;
-    /* border: 2px dashed rgb(6, 128, 0); */
     padding-bottom:0px;
 }
 
@@ -399,39 +393,37 @@ h3 {
     transform:scale(1.01);
 }
 
-#registry{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    gap:2.5em;
-}
 
 #registryDetails{
-    margin-top: 6%;
-    padding:8px 0 9px 10px;
+    margin-left:2%;
+    font-size:larger;
+    padding-left:1%;
     display:flex;
     width:40%;
+  height:220px;
     flex-direction: column;
     justify-content:center;
     align-items: flex-start;
-    gap:3em;    
+    gap:1em;    
     font-weight:bolder;
-    font-size: larger;
     border-radius: 8%;
+    background:rgba(170, 170, 170, 0.558);
     box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
 }
 
 #registryThanks{
-    margin-top: 6%;
-    padding: 10px 2px;
-    font-style:italic;
-    font-size:xx-large;
+    background:rgba(170, 170, 170, 0.558);
+    text-align: center;
+    margin-left:2%;
+    padding:0 1%;
+    font-style: italic;
+    display:flex;
     width:40%;
-    height:275px;
-    background:rgba(174, 173, 173, 0.584);
-    border-radius: 10%;
-    color:white;
-    text-shadow:0 0 3px black;
+    height:220px;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    border-radius: 8%;
     box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
     
 }
