@@ -64,10 +64,11 @@ body {
 }
 
 img{
-    width:25%;
-    height:25%;
+    width:230px;
+    height:210px;
     border-radius: 40%;
 }
+
 
 #joshPic{
     transform: scaleX(-1);
@@ -130,7 +131,7 @@ img{
 }
 
 #details{
-    background-color: rgba(170, 95, 241, 0.375);
+    background-color: rgba(106, 101, 112, 0.375);
 }
 
 #details h1{
@@ -168,31 +169,42 @@ img{
 }
 
     #you{
-        top:40px;
+        top:30px;
         left:0;
         opacity: 0;
         visibility: hidden;
-        animation: you 6s ease;
+        animation: you 4s ease;
         animation-delay: 1s;
         animation-fill-mode: forwards;
     }
 
     #are{
-        top:40px;
-        right:0;
+        top:73px;
+        left:0;
         opacity: 0;
         visibility:hidden;
-        animation: are 5s ease;
+        animation: are 3s ease;
         animation-fill-mode: forwards;
         animation-delay: 3s;
     }
     #invited{
-        top:0px;
+        top:114px;
+        left:0;
         opacity:0;
         visibility: hidden;
-        animation: invited 4s ease;
+        animation: invited 2s ease;
         animation-fill-mode: forwards;
         animation-delay: 5s;
+        }
+
+        #cordially{
+            top:155px;
+            left:0;
+            opacity:0;
+            visibility: hidden;
+            animation: cordially 1s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 7s;
         }
 
         button{
@@ -217,15 +229,19 @@ img{
         }
     @keyframes you{ 
         0% { visibility: hidden;}
-        100% { visibility: visible; opacity:1;left:130px}
+        100% { visibility: visible; opacity:1;left:100px}
     }
     @keyframes are{ 
         0% { visibility: hidden;}
-        100% { visibility: visible; opacity:1;right:130px}
+        100% { visibility: visible; opacity:1;left:130px;}
     }
     @keyframes invited{ 
-        0% { visibility: hidden;top:0}
-        100% { visibility: visible; opacity:1;top:2px}
+        0% { visibility: hidden;}
+        100% { visibility: visible; opacity:1;left:115px}
+    }
+    @keyframes cordially{ 
+        0% { visibility: hidden;}
+        100% { visibility: visible; opacity:1;left:92px}
     }
 
 
@@ -415,6 +431,7 @@ h3 {
     background:rgba(174, 173, 173, 0.584);
     border-radius: 10%;
     color:white;
+    text-shadow:0 0 3px black;
     box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
     
 }
