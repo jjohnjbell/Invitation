@@ -362,3 +362,58 @@ h3 {
 .memories:hover{
     transform: scale(1.01);
 }
+
+#lastSection{
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 3%;
+    margin-top:5%;
+    min-height: 500px;
+    text-align:center;
+    padding:1px 0px;
+    /* background:black; */
+    
+}
+
+#lastSection h2{
+    font-weight:bolder;
+    font-size: xx-large;
+    text-shadow: 0px 5px 10px black;
+    text-decoration: underline;
+    color:rgb(255, 237, 237);
+}
+
+#lastSection h2:hover{
+    transform:scale(1.01);
+}
+
+#registry{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:2.5em;
+}
+
+#registryDetails{
+    margin-top: 6%;
+    padding:8px 0 9px 10px;
+    display:flex;
+    width:40%;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    gap:3em;    
+    font-weight:bolder;
+    font-size: larger;
+    border-radius: 8%;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+}
+
+#registryThanks{
+    width:50%;
+    height:40%;
+    border:2px solid blue;
+    background:rgba(174, 173, 173, 0.584);
+    border-radius: 20%;
+    color:white;
+    
+}
