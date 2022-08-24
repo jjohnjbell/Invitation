@@ -194,48 +194,40 @@ img {
     animation-delay: 5s;
 }
 
-#cordially {
+#year2023 {
     top: 155px;
     left: 0;
     opacity: 0;
     visibility: hidden;
-    animation: cordially 1s ease;
+    animation: year 1s ease;
     animation-fill-mode: forwards;
     animation-delay: 7s;
 }
 
 button {
+    background:rgba(147, 103, 201, 0.246);
     position: absolute;
+    top:230px;
+    left:85px;
+    opacity: 0;
     font-size: large;
     font-weight: bold;
-    border: none;
-    border-radius: 5%;
-    padding: 8px 20px;
-    animation: details 1s ease-in;
-    animation-iteration-count: infinite;
-    animation-delay: 7s;
+    border: 2px white solid;
+    border-radius: 50%;
+    padding: 20px 10px;
+    animation: button 1s ease-in;
+    animation-delay: 9s;
     animation-fill-mode: forwards;
-    bottom: 0;
-    visibility: hidden;
 }
 
-@keyframes details {
+@keyframes button {
     0% {
-        bottom: 0;
-        visibility: hidden;
+     opacity: 0;
+     
     }
-
-    50% {
-        bottom: 3px;
-        visibility: visible;
-        opacity: 1;
-    }
-
-    100% {
-        bottom: 1;
-        visibility: visible;
-        opacity: 1;
-    }
+   100%{
+    opacity: 1;
+   }
 }
 
 @keyframes you {
@@ -274,7 +266,7 @@ button {
     }
 }
 
-@keyframes cordially {
+@keyframes year {
     0% {
         visibility: hidden;
     }
@@ -420,6 +412,7 @@ h3 {
     box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
     border-radius: 3%;
     margin-top: 5%;
+    margin-bottom:2%;
     min-height: 500px;
     text-align: center;
     padding: 1px 0px;
