@@ -3,80 +3,80 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background:rgba(187, 187, 187, 0.902);
+    background: rgba(187, 187, 187, 0.902);
 }
 
 #master {
     width: 80%;
     height: fit-content;
- background: rgba(255, 254, 254,0); 
+    background: rgba(255, 254, 254, 0);
 
 }
 
-#secondSection{
+#secondSection {
     box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
     border-radius: 3%;
-    margin-top:5%;
+    margin-top: 5%;
     min-height: 500px;
-    text-align:center;
-    padding:1px 0px;
+    text-align: center;
+    padding: 1px 0px;
 }
 
-.ourThanks{
-    border-radius:3%;
-    display:flex;
+.ourThanks {
+    border-radius: 3%;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin-top:2%;    
+    margin-top: 2%;
 }
 
-.ourThanks:hover{
-    transform:scale(1.01);
+.ourThanks:hover {
+    transform: scale(1.01);
 }
 
 
-#parter{
-    background-color:rgba(128, 128, 128, 0.396);
-    height:3px;
-    width:98%;
+#parter {
+    background-color: rgba(128, 128, 128, 0.396);
+    height: 3px;
+    width: 98%;
     margin: auto auto;
-    margin-top:1%;
+    margin-top: 1%;
     border-radius: 3%;
     box-shadow: 0 0 6px 2px rgb(198, 195, 195);
 }
 
-.textResponses{
-    width:40%;
-    height:100%;
-    background-color:rgb(206, 206, 206);
-    padding:8% 5%;
-    border-radius:6%;
-    font-size:larger;
+.textResponses {
+    width: 40%;
+    height: 100%;
+    background-color: rgb(206, 206, 206);
+    padding: 8% 5%;
+    border-radius: 6%;
+    font-size: larger;
 }
 
-#shaeComments{
-    margin-top:2%;
+#shaeComments {
+    margin-top: 2%;
 }
 
-#joshComments{
-    margin-bottom:3%;
+#joshComments {
+    margin-bottom: 3%;
 }
 
-img{
-    width:230px;
-    height:210px;
+img {
+    width: 230px;
+    height: 210px;
     border-radius: 40%;
 }
 
 
-#joshPic{
+#joshPic {
     transform: scaleX(-1);
 }
 
 
-#thirdSection{
-    margin-top:5%;
+#thirdSection {
+    margin-top: 5%;
     background-image: url("/img/newFam.jpeg");
     background-size: cover;
     box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
@@ -91,7 +91,7 @@ img{
     justify-content: center;
     align-items: center;
     perspective: 10000px;
-    background:rgba(167, 165, 165, 0.397);
+    background: rgba(167, 165, 165, 0.397);
 }
 
 .card {
@@ -110,7 +110,7 @@ img{
     box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
     top: 0;
     left: 0;
-    color:white;
+    color: white;
     font-size: x-large;
     width: 100%;
     height: 100%;
@@ -122,8 +122,8 @@ img{
     justify-content: center;
 }
 
-#invite{
-    position:relative;
+#invite {
+    position: relative;
     background-image: url('/img/invite.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -131,136 +131,182 @@ img{
 }
 
 
-#details h1{
-    position:absolute;
-    top:0px;
-    left:45%;
+#details h1 {
+    position: absolute;
+    top: 0px;
+    left: 45%;
     font-style: italic;
 }
 
-.updateTitle{
+.updateTitle {
     font-style: italic;
-    color:antiquewhite;
+    color: antiquewhite;
 }
 
-.updates{
-    font-style:italic ;
+.updates {
+    font-style: italic;
     font-size: x-large;
 }
 
-#information{
-    width:100%;
-    display:flex;
+#information {
+    width: 100%;
+    display: flex;
     justify-content: space-around;
-    align-items:center;
-    gap:4em;
+    align-items: center;
+    gap: 4em;
 }
 
-.invitation{
-    position:absolute;
-    visibility:hidden;
+.invitation {
+    position: absolute;
+    visibility: hidden;
     font-style: italic;
     font-weight: bolder;
     text-shadow: 0 0 5px black;
 }
 
-    #you{
-        top:30px;
-        left:0;
-        opacity: 0;
+#you {
+    top: 30px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    animation: you 4s ease;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+#are {
+    top: 73px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    animation: are 3s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+#invited {
+    top: 114px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    animation: invited 2s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+#cordially {
+    top: 155px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    animation: cordially 1s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 7s;
+}
+
+button {
+    position: absolute;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    border-radius: 5%;
+    padding: 8px 20px;
+    animation: details 1s ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    visibility: hidden;
+}
+
+@keyframes details {
+    0% {
+        bottom: 0;
         visibility: hidden;
-        animation: you 4s ease;
-        animation-delay: 1s;
-        animation-fill-mode: forwards;
     }
 
-    #are{
-        top:73px;
-        left:0;
-        opacity: 0;
-        visibility:hidden;
-        animation: are 3s ease;
-        animation-fill-mode: forwards;
-        animation-delay: 3s;
+    50% {
+        bottom: 3px;
+        visibility: visible;
+        opacity: 1;
     }
-    #invited{
-        top:114px;
-        left:0;
-        opacity:0;
+
+    100% {
+        bottom: 1;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes you {
+    0% {
         visibility: hidden;
-        animation: invited 2s ease;
-        animation-fill-mode: forwards;
-        animation-delay: 5s;
-        }
+    }
 
-        #cordially{
-            top:155px;
-            left:0;
-            opacity:0;
-            visibility: hidden;
-            animation: cordially 1s ease;
-            animation-fill-mode: forwards;
-            animation-delay: 7s;
-        }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        left: 100px
+    }
+}
 
-        button{
-            position:absolute;
-            font-size:large;
-            font-weight: bold;
-            border:none;
-            border-radius: 5%;
-            padding:8px 20px;
-            animation: details 1s ease-in;
-            animation-iteration-count:infinite;
-            animation-delay: 7s;
-            animation-fill-mode: forwards;
-            bottom:0;
-            visibility: hidden;
-        }
+@keyframes are {
+    0% {
+        visibility: hidden;
+    }
 
-        @keyframes details {
-            0% { bottom: 0;visibility:hidden;}
-            50% { bottom: 3px;visibility:visible;opacity: 1;}
-            100% { bottom: 1;visibility:visible;opacity: 1;}
-        }
-    @keyframes you{ 
-        0% { visibility: hidden;}
-        100% { visibility: visible; opacity:1;left:100px}
+    100% {
+        visibility: visible;
+        opacity: 1;
+        left: 130px;
     }
-    @keyframes are{ 
-        0% { visibility: hidden;}
-        100% { visibility: visible; opacity:1;left:130px;}
+}
+
+@keyframes invited {
+    0% {
+        visibility: hidden;
     }
-    @keyframes invited{ 
-        0% { visibility: hidden;}
-        100% { visibility: visible; opacity:1;left:115px}
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+        left: 115px
     }
-    @keyframes cordially{ 
-        0% { visibility: hidden;}
-        100% { visibility: visible; opacity:1;left:92px}
+}
+
+@keyframes cordially {
+    0% {
+        visibility: hidden;
     }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+        left: 92px
+    }
+}
 
 
 #divider {
     height: 50px;
-    color:white;
-    text-align:center;
+    color: white;
+    text-align: center;
     text-shadow: 0px 5px 10px black;
     text-decoration: underline;
-    font-size:x-large;  
-    margin-top:0px;  
-    margin-bottom:45px;  
-    padding-top:0px;
+    font-size: x-large;
+    margin-top: 0px;
+    margin-bottom: 45px;
+    padding-top: 0px;
 }
 
-#divider:hover{
-    transform:scale(1.01);
+#divider:hover {
+    transform: scale(1.01);
 }
 
 #subContainer {
     width: 100%;
-    margin-bottom:0px;
-    padding-bottom:0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 #memoryLane {
@@ -280,7 +326,7 @@ img{
     border-radius: 50%;
     width: 180px;
     height: 180px;
-    border:2px rgb(210, 209, 210) solid;
+    border: 2px rgb(210, 209, 210) solid;
 }
 
 
@@ -308,7 +354,7 @@ img{
     image-rendering: optimizeQuality;
     background-size: cover;
     background-position: 0px 52%;
-    margin-right:-20px;
+    margin-right: -20px;
 }
 
 h3 {
@@ -324,40 +370,40 @@ h3 {
 
 }
 
-#quotes{
- /* border:thick 20px blue;*/
- display:flex;
- justify-content: space-around;
- gap:6em;
- align-items: center;
+#quotes {
+    /* border:thick 20px blue;*/
+    display: flex;
+    justify-content: space-around;
+    gap: 6em;
+    align-items: center;
 
 }
 
-.comments{
-    background:rgba(216, 216, 216, 0.481);
+.comments {
+    background: rgba(216, 216, 216, 0.481);
     border-radius: 30%;
-    position:relative;
-    width:20%;
-    display:flex;
+    position: relative;
+    width: 20%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     text-shadow: 0 0 8px white;
-    height:200px;
+    height: 200px;
 }
 
-.comments span{
-    position:absolute;
-    top:0;
-    left:0;
+.comments span {
+    position: absolute;
+    top: 0;
+    left: 0;
     font-size: 80px;
-    opacity: .6;   
-    padding:0;
-    margin: 0; 
-    
+    opacity: .6;
+    padding: 0;
+    margin: 0;
+
 }
 
-#futureComments{
+#futureComments {
     text-align: center;
 }
 
@@ -366,61 +412,65 @@ h3 {
     visibility: visible;
 }
 
-.memories:hover{
+.memories:hover {
     transform: scale(1.01);
 }
 
-#lastSection{
+#lastSection {
     box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
     border-radius: 3%;
-    margin-top:5%;
+    margin-top: 5%;
     min-height: 500px;
-    text-align:center;
-    padding:1px 0px;
+    text-align: center;
+    padding: 1px 0px;
     /* background:black; */
-    
+
 }
 
-#lastSection h2{
-    font-weight:bolder;
+#lastSection>h2 {
+    font-weight: bolder;
     font-size: xx-large;
     text-shadow: 0px 5px 10px black;
     text-decoration: underline;
-    color:rgb(255, 237, 237);
+    color: rgb(255, 237, 237);
 }
 
-#lastSection h2:hover{
-    transform:scale(1.01);
+#lastSection>h2:hover {
+    transform: scale(1.01);
 }
 
-#registry{
-    display:flex;
+#registry {
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    gap:2.5em;
+    gap: 2.5em;
 }
 
-#registryDetails{
+#registryDetails {
     margin-top: 6%;
-    padding:8px 0 9px 10px;
-    display:flex;
-    width:40%;
+    padding: 8px 0 9px 10px;
+    display: flex;
+    width: 40%;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: flex-start;
-    gap:3em;    
-    font-weight:bolder;
+    gap: 3em;
+    font-weight: bolder;
     font-size: larger;
     border-radius: 8%;
     box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
 }
 
-#registryThanks{
-    width:50%;
-    height:40%;
-    border:2px solid blue;
-    background:rgba(174, 173, 173, 0.584);
-    border-radius: 20%;
-    color:white;
-    
+#registryThanks {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    width: 50%;
+    height: 275px;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 8%;
+    color: white;
+    text-shadow: 0 0 5px black;
+
 }
