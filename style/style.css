@@ -6,8 +6,8 @@ body {
     background: rgba(187, 187, 187, 0.902);
 }
 
-#master {
-    width: 80%;
+#masterContainer {
+    width: 90%;
     height: fit-content;
     background: rgba(255, 254, 254, 0);
 
@@ -83,16 +83,6 @@ img {
 }
 
 
-.mainContainer {
-    width: 100%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    perspective: 10000px;
-    background: rgba(167, 165, 165, 0.397);
-}
-
 .card {
     display: inline-block;
     border-radius: 1%;
@@ -102,32 +92,19 @@ img {
     transform-style: preserve-3d;
 }
 
-#invite,
-#details {
-    position: absolute;
-    background-color: rgba(182, 137, 236, 0.375);
-    top: 0;
-    left: 0;
-    color: white;
-    font-size: x-large;
-    width: 100%;
-    height: 100%;
-    border-radius: 1%;
-    backface-visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#invite {
+#firstSection{
     position: relative;
     background-image: url('/img/invite.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 2% 20%;
+    color: white;
+    font-size: x-large;
+    width: 100%;
+    height: 350px;
+    border-radius: 3%;
+    display: flex;
 }
-
 
 #details h1 {
     position: absolute;
@@ -202,6 +179,24 @@ img {
     animation-delay: 4s;
 }
 
+#invitedPersons{
+    text-align: center;
+    opacity:0;
+    position:absolute;
+    font-size:larger;
+    font-weight: bolder;
+    font-style: italic;
+    border:1px solid white;
+    border-radius:500%;
+    padding:18px 10px;
+    top:30px;
+    left:80%;
+    background: rgba(249, 249, 93, 0.246);
+    animation:details 2s ease;
+    animation-delay: 6s;
+    animation-fill-mode:forwards;
+}
+
 .button {
     color: white;
     text-decoration: none;
@@ -216,8 +211,14 @@ img {
     border-radius: 50%;
     padding: 20px 10px;
     animation: button 1s ease-in;
-    animation-delay: 6s;
+    animation-delay: 5s;
     animation-fill-mode: forwards;
+}
+
+@keyframes details {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+    
 }
 
 @keyframes button {
@@ -228,6 +229,7 @@ img {
 
     100% {
         opacity: 1;
+        animation: bounce 1s ease infinite;
     }
 }
 
