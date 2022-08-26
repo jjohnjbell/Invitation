@@ -179,11 +179,11 @@ img {
 }
 
 #hashTag {
-    /* opacity:0; */
+    opacity:0;
     top: 2px;
     left: 40%;
     opacity: 0;
-    animation: hash 1s ease;
+    animation: hash 1.5s ease;
     animation-delay: 7.5s;
     animation-fill-mode: forwards;
 
