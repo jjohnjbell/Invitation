@@ -92,7 +92,7 @@ img {
     transform-style: preserve-3d;
 }
 
-#firstSection{
+#firstSection {
     position: relative;
     background-image: url('/img/invite.jpeg');
     background-size: cover;
@@ -133,7 +133,6 @@ img {
 
 .invitation {
     position: absolute;
-    visibility: hidden;
     font-style: italic;
     font-weight: bolder;
     text-shadow: 0 0 5px black;
@@ -179,22 +178,34 @@ img {
     animation-delay: 4s;
 }
 
-#invitedPersons{
+#hashTag {
+    /* opacity:0; */
+    top: 2px;
+    left: 40%;
+    opacity: 0;
+    animation: hash 1s ease;
+    animation-delay: 7.5s;
+    animation-fill-mode: forwards;
+
+}
+
+#invitedPersons {
     text-align: center;
-    opacity:0;
-    position:absolute;
-    font-size:larger;
+    opacity: 0;
+    position: absolute;
+    font-size: larger;
     font-weight: bolder;
     font-style: italic;
-    border:1px solid white;
-    border-radius:500%;
-    padding:18px 10px;
-    top:30px;
-    left:80%;
+    border: 1px solid pink;
+    border-radius: 500%;
+    padding: 18px 10px;
+    right: 10px;
+    top: 30px;
+    left: 80%;
     background: rgba(249, 249, 93, 0.246);
-    animation:details 2s ease;
+    animation: details 2s ease;
     animation-delay: 6s;
-    animation-fill-mode:forwards;
+    animation-fill-mode: forwards;
 }
 
 .button {
@@ -215,10 +226,38 @@ img {
     animation-fill-mode: forwards;
 }
 
+@keyframes hash {
+    0% {
+        opacity: 1;
+        transform: scale(.5);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(3);
+    }
+
+    75% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.5);
+        text-decoration: underline;
+    }
+}
+
 @keyframes details {
-    0% { opacity: 0;}
-    100% { opacity: 1;}
-    
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        top: 35px;
+    }
+
 }
 
 @keyframes button {
