@@ -204,7 +204,7 @@ img {
     top: 2px;
     left: 40%;
     animation: hash 1.5s ease 1;
-    animation-delay: 7.5s;
+    animation-delay: 6.5s;
     animation-fill-mode: forwards;
 
 }
@@ -230,13 +230,23 @@ img {
 
 #close{
     cursor: pointer;
-    position:relative;
-    text-align: right;
     font-size: .7em;
-    bottom:8px;
-    left:200px;
-    z-index: 30;
+
     
+}
+#rsvp a{
+
+    font-size: 1.3rem;
+}
+
+#rsvp{
+    font-size:1.3rem;
+}
+
+#rsvpSection{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #eventTitle{
