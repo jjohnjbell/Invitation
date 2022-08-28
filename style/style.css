@@ -5,28 +5,29 @@ body {
 
 }
 
-/* #popUp { */
-    /* visibility: hidden; */
-    /* position: absolute;
-    filter:blur(40px);
-    z-index: 1;
+
+@keyframes hearts {
+    0% {
+        background-position: 0% 80%;
+        background-image: url('https://divi.space/wp-content/uploads/2019/02/hearts.png');
+    }
+    
+
+}
+
+#popUp {
+visibility: hidden;
+position: relative;
+    /* filter:blur(40px); */
+    z-index: 10;
     background:rgba(170, 168, 168, 0.81);
     border: 3px green solid;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; */
-/* } */
+    height: 100%; 
+ }
 
-/* #popUpMessage{ */
-    /* position: absolute;
-    z-index: 3;
-    top:4px;
-    left:40px;
-    width:50px;
-    height:50px;
-    background:rgb(5, 5, 5); */
-/* } */
 
 #masterContainer {
     width: 90%;
@@ -104,16 +105,6 @@ img {
     padding-bottom: 1%;
 }
 
-
-.card {
-    display: inline-block;
-    border-radius: 1%;
-    width: 100%;
-    height: 350px;
-    transition: all 1s ease;
-    transform-style: preserve-3d;
-}
-
 #firstSection {
     position: relative;
     background-image: url('/img/invite.jpeg');
@@ -125,7 +116,8 @@ img {
     width: 100%;
     height: 350px;
     border-radius: 3%;
-    display: flex;
+    /* display: flex; */
+    z-index: 0;
 }
 
 #details h1 {
@@ -204,8 +196,7 @@ img {
     opacity: 0;
     top: 2px;
     left: 40%;
-    opacity: 0;
-    animation: hash 1.5s ease;
+    animation: hash 1.5s ease 1;
     animation-delay: 7.5s;
     animation-fill-mode: forwards;
 
@@ -213,21 +204,19 @@ img {
 
 #invitedPersons {
     text-align: center;
-    opacity: 0;
     position: absolute;
     font-size: larger;
     font-weight: bolder;
     font-style: italic;
     border: 1px solid pink;
-    border-radius: 500%;
+    width:40%;
+    height:fit-content;
+    border-radius: 10%;
     padding: 18px 10px;
-    right: 10px;
-    top: 30px;
-    left: 80%;
+    top:33%;
+    left:30%;
+
     background: rgba(249, 249, 93, 0.246);
-    animation: details 2s ease;
-    animation-delay: 6s;
-    animation-fill-mode: forwards;
 }
 
 .button {
@@ -248,20 +237,46 @@ img {
     animation-fill-mode: forwards;
 }
 
+@keyframes ring {
+    0% {
+        opacity: 1;
+        transform: rotate(0deg);
+        text-decoration: underline;
+    }
+
+    33% {
+        opacity: 1;
+        transform: rotate(15deg);
+        text-decoration: underline;
+    }
+
+    66% {
+        opacity: 1;
+        transform: rotate(-15deg);
+        text-decoration: underline;
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(0deg);
+        transform: scale(1.5);
+        text-decoration: underline;
+       
+    }
+
+}
+
+
+
 @keyframes hash {
     0% {
         opacity: 1;
-        transform: scale(.5);
+        transform: scale(1);
     }
 
     50% {
         opacity: 1;
         transform: scale(3);
-    }
-
-    75% {
-        opacity: 1;
-        transform: scale(1.5);
     }
 
     100% {
@@ -271,17 +286,6 @@ img {
     }
 }
 
-@keyframes details {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-        top: 35px;
-    }
-
-}
 
 @keyframes button {
     0% {
