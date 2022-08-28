@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+
 <html>
 
 <head>
@@ -11,61 +13,72 @@
 </head>
 
 <body>
-    <div id="master">
-        <div class="mainContainer" id="mainContainer">
-            <div class="card" id="card">
-                <div id="details">
-                    <h1>Details</h1><br />
-                    <div id="information">
-                        <p><span class="updateTitle">Venue</span>:<span class="updates"> To be Announced</span></p>
-                        <p><span class="updateTitle">Date</span>:<span class="updates"> To be Announced</span></p>
-                        <p><span class="updateTitle">Time</span>:<span class="updates"> To be Announced</span></p>
+
+
+    <div id="masterContainer">
+        <section class="boxShadow" id="firstSection">
+            <h2 class="invitation" id="bells">Bells</h2>
+            <h2 class="invitation" id="two">2</h2>
+            <h2 class="invitation" id="be"> Be</h2>
+            <h2 class="invitation" id="year2023">2023!</h2>
+            <h2 class="invitation" id="hashTag">#HearTheBells!</h2>
+            <div id="popUp">
+                <div id="invitedPersons"><span id="eventTitle">Details for Event</span>
+                    <div id="ceremonyInfo">
+                        <ul>
+                            <li><i>Venue: </i> <span class="furtherDetails">  Dalkieth Great House</span> </li>
+                            <li><i>Date: </i> <span class="furtherDetails">  Sunday March 12, 2023</span> </li>
+                            <li><i>Time: </i> <span class="furtherDetails">  11 am</span> </li>
+                        </ul>
+                        <div id="rsvpSection">
+                        <span id="rsvp"><abbr title="Let us know if you will be joining! :-D">RSVP</abbr> to: <a href="#">hearthebells2023@gmail.com</a></span> <span id="close">Close</span>
+                        </div>
                     </div>
-                    <button id="showInviteBtn">Invite</button>
                 </div>
 
-                <div id="invite">
-                    <h2 class="invitation" id="you">You</h2>
-                    <h2 class="invitation" id="are">Are</h2>
-                    <h2 class="invitation" id="invited">
-                        Cordially Invited</h2>
-
-                    <button id="showDetailsBtn">Details</button>
-                </div>
             </div>
-        </div>
+            <a href="#lastSection" class="button" id="showDetailsBtn">Registry</a>
+           
+        </section>
 
-        <div id="secondSection">
+        <section class="boxShadow" id="secondSection">
             <div class="ourThanks" id="shaeComments">
-                <img src="/img/pics/shaeSmile.png" alt="Shae's Thanks" />
+                <img id="shaeSmile" src="/img/pics/shaeSmile.png" alt="Shae's Thanks" />
                 <div class="textResponses"><i>"Thank you all so much for your help, prayers and support. </i></div>
             </div>
             <div id="parter"></div>
             <div class="ourThanks" id="joshComments">
-                <div class="textResponses"><i>"We believe and accept that even the greatest needs a supportive community.
-                    Thank you all for being just that."</i></div>
+                <div class="textResponses"><i>"We believe and accept that even the greatest needs a supportive
+                        community.
+                        Thank you all for being just that."</i></div>
                 <img id="joshPic" src="/img/pics/joshuaSmile.png" alt="Joshua's Thanks" />
             </div>
-        </div>
+        </section>
 
-        <div id="thirdSection">
+        <section class="boxShadow" id="thirdSection">
             <div id="divider">
-                <h1>Learn about The Bells</h1>
+                <h1>About The Couple</h1>
             </div>
             <section id="subContainer">
                 <div id="memoryLane">
 
-                    <div class="memories" id="friends">
-                        <h3>Friends</h3>
-                    </div>
+                    <a href="https://photos.app.goo.gl/Zs5fkZDhsSozC9B3A">
+                        <div class="memories" id="friends">
+                            <h3>Friends</h3>
+                        </div>
+                    </a>
 
-                    <div class="memories" id="fiance">
-                        <h3>Fiance</h3>
-                    </div>
+                    <a href="https://photos.app.goo.gl/JmmqPU4bzRBoujzo7">
+                        <div class="memories" id="fiance">
+                            <h3>Fiance</h3>
+                        </div>
+                    </a>
 
-                    <div class="memories" id="future">
-                        <h3>Future</h3>
-                    </div>
+                    <a href="https://photos.app.goo.gl/uwKX6dZbD98Z2BtF6">
+                        <div class="memories" id="future">
+                            <h3>Future</h3>
+                        </div>
+                    </a>
                 </div>
             </section>
             <section id="quotes">
@@ -83,11 +96,31 @@
                     </blockquote>
                 </div>
             </section>
-        </div>
+        </section>
+
+
+        <section class="boxShadow" id="lastSection">
+            <h2> Registry Info</h2>
+            <div id="registry">
+
+                <div class="boxShadow" id="registryDetails">
+                    <i>Bank:</i>
+                    <i>Account #:</i>
+                    <i>Currency:</i>
+                    <i>Name:</i>
+                </div>
+
+                <div class="boxShadow" id="registryThanks">
+                    <h2> <i>Thank you all for your contributions and well wishes.</i></h2>
+                </div>
+
+            </div>
+        </section>
 
 
         <script src="JS/index.js"> </script>
     </div>
+
 </body>
 
 </html>
