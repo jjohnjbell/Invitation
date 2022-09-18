@@ -1,7 +1,12 @@
 body {
     position: relative;
     margin: 1px;
-    background: rgba(187, 187, 187, 0.902);
+    background: linear-gradient(#9ba9ff,#b9b5ff,#e2c6ff);
+    /* background: rgba(187, 187, 187, 0.902); */
+    /* background-image: linear-gradient(rgba(160, 63, 136, 0.452),rgb(205, 161, 205)); */
+    /* font-family: sans-serif; */
+    /* font-family: ; */
+    
 
 }
 
@@ -49,6 +54,7 @@ position: relative;
     min-height: 500px;
     text-align: center;
     padding: 1px 0px;
+    background:whitesmoke;
 }
 
 .ourThanks {
@@ -526,6 +532,7 @@ h3 {
     min-height: 500px;
     text-align: center;
     padding: 1px 0px;
+    background:whitesmoke;
     /* background:black; */
 
 }
