@@ -26,8 +26,7 @@ body {
 #popUp {
     visibility: hidden;
     position: relative;
-    /* filter:blur(40px); */
-    z-index: 10;
+    /* z-index: 10; */
     background: rgba(170, 168, 168, 0.81);
     border: 3px green solid;
     top: 0;
@@ -40,7 +39,7 @@ body {
 #masterContainer {
     width: 90%;
     height: fit-content;
-    background: rgba(255, 254, 254, 0);
+    background: linear-gradient(#9ba9ff, #b9b5ff, #e2c6ff);
     margin: 0 auto;
 }
 
@@ -135,8 +134,7 @@ img {
     width: 100%;
     height: 350px;
     border-radius: 3%;
-    /* display: flex; */
-    z-index: 0;
+
 }
 
 #details h1 {
@@ -228,11 +226,11 @@ img {
     font-weight: bolder;
     font-style: italic;
     border: 1px solid pink;
-    width: 40%;
-    /* height:fit-content; */
+    width: fit-content;
+
     height: fit-content;
     border-radius: 5%;
-    padding: 18px 10px;
+    padding: 2% 3%;
     padding-bottom: .1em;
     top: 20%;
     left: 30%;
@@ -268,6 +266,7 @@ img {
 
 .furtherDetails {
     color: rgb(34, 32, 35);
+    text-decoration: underline;
 }
 
 #close:hover,

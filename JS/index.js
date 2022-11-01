@@ -14,5 +14,4 @@ bellsEl.addEventListener("click", function(){
 
 closeEl.addEventListener("click",function(){
     popUp.style.visibility="hidden"
-    console.log("button works")
 })
