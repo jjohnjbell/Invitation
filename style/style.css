@@ -1,13 +1,9 @@
-body {
-    position: relative;
-    /* margin: 500px; */
-    background: linear-gradient(#9ba9ff,#b9b5ff,#e2c6ff);
-    /* background: rgba(187, 187, 187, 0.902); */
-    /* background-image: linear-gradient(rgba(160, 63, 136, 0.452),rgb(205, 161, 205)); */
-    /* font-family: sans-serif; */
-    /* font-family: ; */
-    
+*{
+    box-sizing:border-box;
+}
 
+body {
+    background: linear-gradient(#9ba9ff, #b9b5ff, #e2c6ff);
 }
 
 
@@ -16,29 +12,29 @@ body {
         background-position: 0% 80%;
         background-image: url('https://divi.space/wp-content/uploads/2019/02/hearts.png');
     }
-    
+
 
 }
 
 
 
-#ceremonyInfo ul{
+#ceremonyInfo ul {
     list-style: none;
     text-align: left;
 }
 
 #popUp {
-visibility: hidden;
-position: relative;
+    visibility: hidden;
+    position: relative;
     /* filter:blur(40px); */
     z-index: 10;
-    background:rgba(170, 168, 168, 0.81);
+    background: rgba(170, 168, 168, 0.81);
     border: 3px green solid;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; 
- }
+    height: 100%;
+}
 
 
 #masterContainer {
@@ -54,7 +50,7 @@ position: relative;
     min-height: 500px;
     text-align: center;
     padding: 1px 0px;
-    background:whitesmoke;
+    background: whitesmoke;
     background-image: url("/img/pics/sunset.jpg");
     background-position-y: -80px;
     background-repeat: no-repeat;
@@ -71,8 +67,8 @@ position: relative;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 2%;
-    
-    
+
+
 }
 
 .ourThanks:hover {
@@ -232,49 +228,51 @@ img {
     font-weight: bolder;
     font-style: italic;
     border: 1px solid pink;
-    width:40%;
+    width: 40%;
     /* height:fit-content; */
-    height:fit-content;
+    height: fit-content;
     border-radius: 5%;
     padding: 18px 10px;
-    padding-bottom:.1em;
-    top:20%;
-    left:30%;
+    padding-bottom: .1em;
+    top: 20%;
+    left: 30%;
 
     background: rgba(249, 249, 93, 0.246);
 }
 
-#close{
+#close {
     cursor: pointer;
     font-size: .7em;
 
-    
+
 }
-#rsvp a{
+
+#rsvp a {
 
     font-size: 1.3rem;
 }
 
-#rsvp{
-    font-size:1.3rem;
+#rsvp {
+    font-size: 1.3rem;
 }
 
-#rsvpSection{
-    display:flex;
+#rsvpSection {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#eventTitle{
+#eventTitle {
     text-decoration: underline;
 }
 
-.furtherDetails{
-    color:rgb(34, 32, 35);
+.furtherDetails {
+    color: rgb(34, 32, 35);
 }
 
-#close:hover,#close:focus{
-    color:rgb(108, 43, 108);
+#close:hover,
+#close:focus {
+    color: rgb(108, 43, 108);
 }
 
 .button {
@@ -320,7 +318,7 @@ img {
         transform: rotate(0deg);
         transform: scale(1.5);
         text-decoration: underline;
-       
+
     }
 
 }
@@ -365,8 +363,8 @@ img {
 
     }
 
-    50%{
-        opacity:.8;
+    50% {
+        opacity: .8;
         border-color: bisque;
     }
 
@@ -448,14 +446,12 @@ img {
 }
 
 #memoryLane {
-    /* border: 3px dashed rgb(225, 185, 38); */
     padding: 1%;
-    width: 97%;
+    width: 100%;
     display: flex;
-    justify-content: space-around;   
-    /* align-items: center; */
-    gap: 10%;
-    /* gap:6rem; */
+    justify-content: space-around;
+    gap: 9rem;
+  
 
 }
 
@@ -493,7 +489,7 @@ img {
     image-rendering: optimizeQuality;
     background-size: cover;
     background-position: 0px 52%;
-    /* margin-right: -20px; */
+    /* margin-right:px; */
 }
 
 h3 {
@@ -510,10 +506,9 @@ h3 {
 }
 
 #quotes {
-    /* border:thick 20px blue;*/
     display: flex;
     justify-content: space-around;
-    gap: 6em;
+    gap: 8rem;
     align-items: center;
 
 }
@@ -521,7 +516,6 @@ h3 {
 .comments {
     background: rgba(216, 216, 216, 0.481);
     border-radius: 30%;
-    position: relative;
     width: 20%;
     display: flex;
     justify-content: center;
@@ -532,16 +526,6 @@ h3 {
     height: fit-content;
 }
 
-.comments span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 80px;
-    opacity: .6;
-    padding: 0;
-    margin: 0;
-
-}
 
 #futureComments {
     text-align: center;
@@ -563,7 +547,7 @@ h3 {
     min-height: 500px;
     text-align: center;
     padding: 1px 0px;
-    background:rgba(194, 195, 194, 0.3);
+    background: rgba(194, 195, 194, 0.3);
     /* background:black; */
 
 }
@@ -598,7 +582,7 @@ h3 {
     border-radius: 8%;
     color: white;
     font-weight: bolder;
-    font-size:large;
+    font-size: large;
     text-shadow: 0 0 10px black;
 }
 
@@ -612,14 +596,14 @@ h3 {
     align-items: flex-start;
     gap: 1.3em;
     font-weight: bolder;
-    font-size:large;
+    font-size: large;
     border-radius: 8%;
     height: 275px;
 }
 
-#bankInfo{
-    color:white;
-    font-weight:bolder;
+#bankInfo {
+    color: white;
+    font-weight: bolder;
     text-shadow: 0 0 10px black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
