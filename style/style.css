@@ -41,7 +41,15 @@ body {
     height: fit-content;
     background: linear-gradient(#9ba9ff, #b9b5ff, #e2c6ff);
     margin: 0 auto;
+    min-width: 900px;
 }
+
+/* @media only screen and (max-width:500px){
+    #masterContainer{
+        width:100%;
+        min-width: 500px;
+    } */
+
 
 #secondSection {
     border-radius: 3%;
