@@ -1,6 +1,6 @@
 body {
     position: relative;
-    margin: 1px;
+    /* margin: 500px; */
     background: linear-gradient(#9ba9ff,#b9b5ff,#e2c6ff);
     /* background: rgba(187, 187, 187, 0.902); */
     /* background-image: linear-gradient(rgba(160, 63, 136, 0.452),rgb(205, 161, 205)); */
@@ -291,6 +291,7 @@ img {
     border-radius: 50%;
     padding: 20px 10px;
     animation: button 1s ease-in;
+    animation: flash 1s infinite alternate-reverse;
     animation-delay: 5s;
     animation-fill-mode: forwards;
 }
@@ -354,6 +355,24 @@ img {
     100% {
         opacity: 1;
         animation: bounce 1s ease infinite;
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: .6;
+        border-color: silver;
+
+    }
+
+    50%{
+        opacity:.8;
+        border-color: bisque;
+    }
+
+    100% {
+        opacity: 1;
+        border-color: white;
     }
 }
 
