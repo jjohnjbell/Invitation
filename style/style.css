@@ -544,7 +544,7 @@ h3 {
     min-height: 500px;
     text-align: center;
     padding: 1px 0px;
-    background:rgba(156,175,136,0.7);
+    background:rgba(194, 195, 194, 0.3);
     /* background:black; */
 
 }
@@ -565,34 +565,44 @@ h3 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 2.5em;
+    gap: 2em;
 }
 
 #registryDetails {
     margin-top: 6%;
-    padding: 8px 0 9px 16px;
+    padding-left: 1rem;
     display: flex;
     width: 40%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 3em;
+    gap: 1.3em;
     font-weight: bolder;
-    font-size: larger;
+    font-size:x-large;
     border-radius: 8%;
+    height: 275px;
 }
 
+#bankInfo{
+    color:white;
+    font-weight:bolder;
+    padding-left: 1.5rem;
+    text-shadow: 0 0 10px black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 #registryThanks {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 6%;
-    width: 50%;
+    width: 40%;
     height: 275px;
     border-radius: 8%;
     color: white;
-    text-shadow: 0 0 5px black;
+    font-weight: bolder;
+    font-size:x-large;
+    text-shadow: 0 0 10px black;
 }
 
 .boxShadow {
