@@ -291,7 +291,7 @@ img {
     border-radius: 50%;
     padding: 20px 10px;
     animation: button 1s ease-in;
-    animation: flash 1s infinite alternate-reverse;
+    animation: flash 2s infinite alternate-reverse;
     animation-delay: 5s;
     animation-fill-mode: forwards;
 }
@@ -348,7 +348,7 @@ img {
 
 @keyframes button {
     0% {
-        opacity: 0;
+        opacity: .3;
 
     }
 
