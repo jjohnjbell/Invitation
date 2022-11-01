@@ -568,31 +568,9 @@ h3 {
     gap: 2em;
 }
 
-#registryDetails {
-    margin-top: 6%;
-    padding-left: 1rem;
-    display: flex;
-    width: 40%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1.3em;
-    font-weight: bolder;
-    font-size:x-large;
-    border-radius: 8%;
-    height: 275px;
-}
-
-#bankInfo{
-    color:white;
-    font-weight:bolder;
-    padding-left: 1.5rem;
-    text-shadow: 0 0 10px black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 #registryThanks {
     display: flex;
+    padding: 0 .8rem 0 .8rem;
     justify-content: center;
     align-items: center;
     margin-top: 6%;
@@ -601,9 +579,33 @@ h3 {
     border-radius: 8%;
     color: white;
     font-weight: bolder;
-    font-size:x-large;
+    font-size:large;
     text-shadow: 0 0 10px black;
 }
+
+#registryDetails {
+    margin-top: 6%;
+    padding-left: .8rem;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.3em;
+    font-weight: bolder;
+    font-size:large;
+    border-radius: 8%;
+    height: 275px;
+}
+
+#bankInfo{
+    color:white;
+    font-weight:bolder;
+    text-shadow: 0 0 10px black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
 
 .boxShadow {
     box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
