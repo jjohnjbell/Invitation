@@ -1,7 +1,12 @@
 body {
     position: relative;
     margin: 1px;
-    background: rgba(187, 187, 187, 0.902);
+    background: linear-gradient(#9ba9ff,#b9b5ff,#e2c6ff);
+    /* background: rgba(187, 187, 187, 0.902); */
+    /* background-image: linear-gradient(rgba(160, 63, 136, 0.452),rgb(205, 161, 205)); */
+    /* font-family: sans-serif; */
+    /* font-family: ; */
+    
 
 }
 
@@ -49,15 +54,25 @@ position: relative;
     min-height: 500px;
     text-align: center;
     padding: 1px 0px;
+    background:whitesmoke;
+    background-image: url("/img/pics/sunset.jpg");
+    background-position-y: -80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
 }
 
 .ourThanks {
     border-radius: 3%;
+    font-size: large;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 2%;
+    
+    
 }
 
 .ourThanks:hover {
@@ -82,6 +97,7 @@ position: relative;
     padding: 8% 5%;
     border-radius: 6%;
     font-size: larger;
+    opacity: .8;
 }
 
 #shaeComments {
@@ -218,7 +234,7 @@ img {
     border: 1px solid pink;
     width:40%;
     /* height:fit-content; */
-    height:60%;
+    height:fit-content;
     border-radius: 5%;
     padding: 18px 10px;
     padding-bottom:.1em;
@@ -417,9 +433,10 @@ img {
     padding: 1%;
     width: 97%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 6rem;
+    justify-content: space-around;   
+    /* align-items: center; */
+    gap: 10%;
+    /* gap:6rem; */
 
 }
 
@@ -457,7 +474,7 @@ img {
     image-rendering: optimizeQuality;
     background-size: cover;
     background-position: 0px 52%;
-    margin-right: -20px;
+    /* margin-right: -20px; */
 }
 
 h3 {
@@ -492,7 +509,8 @@ h3 {
     align-items: center;
     color: rgb(0, 0, 0);
     text-shadow: 0 0 8px white;
-    height: 200px;
+    min-height: 200px;
+    height: fit-content;
 }
 
 .comments span {
@@ -526,6 +544,7 @@ h3 {
     min-height: 500px;
     text-align: center;
     padding: 1px 0px;
+    background:rgba(194, 195, 194, 0.3);
     /* background:black; */
 
 }
@@ -546,34 +565,44 @@ h3 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 2.5em;
+    gap: 2em;
 }
 
 #registryDetails {
     margin-top: 6%;
-    padding: 8px 0 9px 16px;
+    padding-left: 1rem;
     display: flex;
     width: 40%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 3em;
+    gap: 1.3em;
     font-weight: bolder;
-    font-size: larger;
+    font-size:x-large;
     border-radius: 8%;
+    height: 275px;
 }
 
+#bankInfo{
+    color:white;
+    font-weight:bolder;
+    padding-left: 1.5rem;
+    text-shadow: 0 0 10px black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 #registryThanks {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 6%;
-    width: 50%;
+    width: 40%;
     height: 275px;
     border-radius: 8%;
     color: white;
-    text-shadow: 0 0 5px black;
+    font-weight: bolder;
+    font-size:x-large;
+    text-shadow: 0 0 10px black;
 }
 
 .boxShadow {
