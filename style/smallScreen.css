@@ -1,0 +1,13 @@
+body{
+    max-width:540px;
+    background: red;
+}
+
+#masterContainer{
+    width:10%;
+    background:pink;
+}
+
+#firstSection{
+    width:10%;
+}

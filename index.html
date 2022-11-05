@@ -3,24 +3,24 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
     <title> Hear the Bells !</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 540px)" href="style/smallScreen.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
-    <div id="masterContainer">
-        <section class="boxShadow" id="firstSection">
-            <h2 class="invitation" id="bells">Bells</h2>
-            <h2 class="invitation" id="two">2</h2>
-            <h2 class="invitation" id="be"> Be</h2>
-            <h2 class="invitation" id="year2023">2023!</h2>
-            <h2 class="invitation" id="hashTag">#HearTheBells!</h2>
+    <div id="masterContainer" >
+        <div class="boxShadow widthResponsive" id="firstSection">
+            <p class="invitation" id="bells">Bells</p>
+            <p class="invitation" id="two">2</p>
+            <p class="invitation" id="be"> Be</p>
+            <p class="invitation" id="year2023">2023!</p>
+            <p class="invitation" id="hashTag">#HearTheBells!</p>
             <div id="popUp">
                 <div id="invitedPersons"><span id="eventTitle">Details for Event</span>
                     <div id="ceremonyInfo">
@@ -30,18 +30,18 @@
                             <li><i>Time: </i> <span class="furtherDetails">  11 am</span> </li>
                             <li><i>Location: </i> <span class="furtherDetails"><a target="_blank" href="https://www.google.com/maps/place/Hibiscus+Lodge/@18.4118072,-77.1003904,18z/data=!3m1!4b1!4m8!3m7!1s0x8edafc2ad42a74f1:0x4a946d46878a97ed!5m2!4m1!1i2!8m2!3d18.411805!4d-77.0994607">Here!</a> </span> </li>
                         </ul>
-                        <div id="rsvpSection">
+                        <div id="rsvpdiv">
                         <span id="rsvp"><abbr title="Let us know if you will be joining! :-D">RSVP</abbr> to: <a href="#">hearthebells2023@gmail.com</a></span> <span id="close">Close</span>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <a href="#lastSection" class="button" id="showDetailsBtn">Registry</a>
+            <a href="#lastdiv" class="button" id="showDetailsBtn">Registry</a>
            
-        </section>
+        </div>
 
-        <section  id="secondSection">
+        <div  class="widthResponsive" id="secondSection">
             <div class="ourThanks" id="shaeComments">
                 <img id="shaeSmile" src="/img/pics/shaeSmile.png" alt="Shae's Thanks" />
                 <div class="textResponses"><i>"Thank you all so much for your help, prayers and support. </i></div>
@@ -53,13 +53,13 @@
                         Thank you all for being just that."</i></div>
                 <img id="joshPic" src="/img/pics/joshuaSmile.png" alt="Joshua's Thanks" />
             </div>
-        </section>
+        </div>
 
-        <section class="boxShadow" id="thirdSection">
+        <div class="boxShadow, widthResponsive" id="thirdSection">
             <div id="divider">
                 <h1>About The Couple</h1>
             </div>
-            <section id="subContainer">
+            <div id="subContainer">
                 <div id="memoryLane">
 
                     <a href="https://photos.app.goo.gl/Zs5fkZDhsSozC9B3A">
@@ -80,8 +80,8 @@
                         </div>
                     </a>
                 </div>
-            </section>
-            <section id="quotes">
+            </div>
+            <div id="quotes">
                 <div class="comments" id="friendComments">
                     <blockquote><span>❝</span>It started simple. There wasn't much to consider. We clicked. Our bond
                         grew
@@ -95,12 +95,12 @@
                     <blockquote><span>❝</span>The sky's the limit! Hearts filled, Future bright by the Grace of God.
                     </blockquote>
                 </div>
-            </section>
-        </section>
+            </div>
+        </div>
 
 
-        <section class="boxShadow" id="lastSection">
-            <h2> Registry Info</h2>
+        <div class="boxShadow, widthResponsive" id="lastSection">
+            <p> Registry Info</p>
             <div id="registry">
 
                 <div class="boxShadow" id="registryDetails">
@@ -111,11 +111,11 @@
                 </div>
 
                 <div class="boxShadow" id="registryThanks">
-                    <h2> <i>Thank you all for your contributions and well wishes.</i></h2>
+                    <p> <i>Thank you all for your contributions and well wishes.</i></p>
                 </div>
 
             </div>
-        </section>
+        </div>
 
 
         <script src="JS/index.js"> </script>
