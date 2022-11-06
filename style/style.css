@@ -1,8 +1,15 @@
 *{
-    box-sizing:border-box;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
-body {
+html, body {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    margin: 0;
+    font-size: 16px;
+    /* overflow-x: hidden; */
     background: linear-gradient(#9ba9ff, #b9b5ff, #e2c6ff);
 }
 
@@ -37,19 +44,27 @@ body {
 
 
 #masterContainer {
-    width: 90%;
+    width: 100%;
     height: fit-content;
-    background: linear-gradient(#9ba9ff, #b9b5ff, #e2c6ff);
-    margin: 0 auto;
-    min-width: 900px;
+    /* background: linear-gradient(#9ba9ff, #b9b5ff, #e2c6ff); */
+    background: red;
+    padding: 8px;
+    /* margin: 0; */
+    /* margin: 0 auto; */
+    
 }
 
-/* @media only screen and (max-width:500px){
-    #masterContainer{
-        width:100%;
+@media screen and (max-width:640px){
+    #masterContainer {
+    }
+}
+
+@media only screen and (max-width:640px){
+    /* #masterContainer{
+        width:100;
         min-width: 500px;
     } */
-
+}
 
 #secondSection {
     border-radius: 3%;
@@ -132,6 +147,7 @@ img {
 }
 
 #firstSection {
+    /* width: 100%; */
     position: relative;
     background-image: url('/img/invite.jpeg');
     background-size: cover;
@@ -139,10 +155,18 @@ img {
     background-position: 2% 20%;
     color: white;
     font-size: x-large;
-    width: 100%;
-    height: 350px;
+    /* height: 350px; */
+    height: fit-content;
     border-radius: 3%;
+    padding: 0 18px;
 
+}
+
+.welcome-text {
+    padding-left: 24px;
+    margin: 0;
+    height: fit-content;
+    padding-bottom: 16px;
 }
 
 #details h1 {
@@ -171,9 +195,10 @@ img {
 }
 
 .invitation {
-    position: absolute;
+    /* position: absolute; */
     font-style: italic;
     font-weight: bolder;
+    margin: 8px 0;
     text-shadow: 0 0 5px black;
 }
 
@@ -218,9 +243,15 @@ img {
 }
 
 #hashTag {
+    display: inline-block;
     opacity: 0;
-    top: 2px;
-    left: 40%;
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+    /* top: 2px;
+    left: 40%; */
+    /* margin: 0 auto; */
+    margin: 32px 0;
     animation: hash 1.5s ease 1;
     animation-delay: 6.5s;
     animation-fill-mode: forwards;
@@ -283,12 +314,14 @@ img {
 }
 
 .button {
+    display: inline-block;
     color: white;
     text-decoration: none;
     background: rgba(147, 103, 201, 0.246);
-    position: absolute;
-    top: 230px;
-    left: 85px;
+    /* position: absolute; */
+    /* top: 230px;
+    left: 85px; */
+    margin-top:8px;
     opacity: 0;
     font-size: large;
     font-weight: bold;
@@ -345,7 +378,7 @@ img {
 
     100% {
         opacity: 1;
-        transform: scale(1.5);
+        transform: scale(1);
         text-decoration: underline;
     }
 }
@@ -359,7 +392,6 @@ img {
 
     100% {
         opacity: 1;
-        animation: bounce 1s ease infinite;
     }
 }
 
@@ -458,8 +490,26 @@ img {
     display: flex;
     justify-content: space-around;
     gap: 9rem;
-  
+}
 
+.memoryLane {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 640px) {
+    .memoryLane {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.memory {
+    padding: 12px 0;
+    /* background: blue; */
+    /* border: 5px solid green; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .memories {
@@ -517,20 +567,21 @@ h3 {
     justify-content: space-around;
     gap: 8rem;
     align-items: center;
-
 }
 
 .comments {
     background: rgba(216, 216, 216, 0.481);
     border-radius: 30%;
-    width: 20%;
+    /* width: 20%; */
+    margin-top: 16px;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: rgb(0, 0, 0);
     text-shadow: 0 0 8px white;
     min-height: 200px;
-    height: fit-content;
+    /* height: fit-content; */
 }
 
 
