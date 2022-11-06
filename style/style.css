@@ -79,6 +79,21 @@ html, body {
 
 }
 
+#lastSection {
+    border-radius: 3%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    min-height: 500px;
+    text-align: center;
+    padding: 1px 0px;
+    background: rgba(194, 195, 194, 0.3);
+    /* background:black; */
+    background-image: url("/img/pics/spur.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
 .ourThanks {
     border-radius: 3%;
     font-size: large;
@@ -582,19 +597,9 @@ h3 {
     transform: scale(1.01);
 }
 
-#lastSection {
-    border-radius: 3%;
-    margin-top: 5%;
-    margin-bottom: 2%;
-    min-height: 500px;
-    text-align: center;
-    padding: 1px 0px;
-    background: rgba(194, 195, 194, 0.3);
-    /* background:black; */
 
-}
 
-#lastSection>h2 {
+#lastSection> h2 {
     font-weight: bolder;
     font-size: xx-large;
     text-shadow: 0px 5px 10px black;
@@ -626,6 +631,7 @@ h3 {
     font-weight: bolder;
     font-size: large;
     text-shadow: 0 0 10px black;
+    background: rgba(128, 128, 128, 0.486);
 }
 
 #registryDetails {
@@ -641,6 +647,7 @@ h3 {
     font-size: large;
     border-radius: 8%;
     height: 275px;
+    background: rgba(128, 128, 128, 0.486);
 }
 
 #bankInfo {
