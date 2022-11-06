@@ -248,24 +248,20 @@ img {
     width: 100%;
     font-size: 36px;
     text-align: center;
-    /* margin: 32px 0; */
     animation: hash 1.5s ease 1;
-    animation-delay: 6.5s;
+    animation-delay: 6s;
     animation-fill-mode: forwards;
     margin:0px;
 }
 
 
 #invitedPersons {
-    /* display:inline; */
     visibility: hidden;
     text-align: center;
     font-weight:bold;
     border: 1px solid pink;
-    /* width: ; */
     height: fit-content;
     border-radius: 5%;
-    /* padding: 2% 3%; */
     padding: 5px 8px;
     background: rgba(193, 97, 202, 0.685);
     text-shadow: 0 0 5px black;
@@ -274,7 +270,7 @@ img {
 
 #close {
     cursor: pointer;
-    font-size: .7em;
+    font-size: smaller;
 
 
 }
@@ -516,9 +512,13 @@ img {
     #firstSection {
         background-image: url('/img/invite.jpeg');
         background-size:fit-content;
-        /* background-repeat: no-repeat;
-        background-position: 2% 80%; */
     }
+
+
+    #mainPartition{
+        margin-top:15px;
+    }
+
 }
 
 .memory {
