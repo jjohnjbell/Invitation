@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-    /* border: 1px solid red; */
 }
 
 html, body {
@@ -14,6 +13,7 @@ html, body {
 }
 
 
+
 @keyframes hearts {
     0% {
         background-position: 0% 80%;
@@ -23,28 +23,37 @@ html, body {
 
 }
 
+#mainPartition{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin-top:15px;
+    padding:0px;
+    height:fit-content;
+    
+
+}
+
 
 
 #ceremonyInfo ul {
     list-style: none;
-    text-align: left;
+    text-align:left;
+    font-size:20px;
+    margin-bottom:3px;
+
 }
 
-#popUp {
-    visibility: hidden;
-    position: relative;
-    /* z-index: 10; */
-    background: rgba(170, 168, 168, 0.81);
-    border: 3px green solid;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+#ceremonyInfo{
+    border:2px rgba(199, 199, 199, 0.884) dashed;
+    margin:2px 0 2px 0;
+    text-align: center;
 }
-
 
 #masterContainer {
     width: 100%;
+    min-width: 420px;
     height: fit-content;
     background: linear-gradient(#9ba9ff, #b9b5ff, #e2c6ff);
     padding: 8px;
@@ -52,7 +61,7 @@ html, body {
 }
 
 #firstSection {
-    position: relative;
+    /* position: relative; */
     background-image: url('/img/invite.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -166,6 +175,7 @@ img {
     margin: 0;
     height: fit-content;
     padding-bottom: 16px;
+    margin-top:0px;
 }
 
 #details h1 {
@@ -194,16 +204,14 @@ img {
 }
 
 .invitation {
-    /* position: absolute; */
     font-style: italic;
     font-weight: bolder;
     margin: 8px 0;
     text-shadow: 0 0 5px black;
+    width: fit-content;
 }
 
 #bells {
-    top: 30px;
-    left: 0;
     opacity: 0;
     visibility: hidden;
     animation: bells 1s ease;
@@ -212,9 +220,7 @@ img {
 }
 
 #two {
-    top: 73px;
-    left: 0;
-    opacity: 0;
+     opacity: 0;
     visibility: hidden;
     animation: two 1s ease;
     animation-fill-mode: forwards;
@@ -222,8 +228,6 @@ img {
 }
 
 #be {
-    top: 114px;
-    left: 0;
     opacity: 0;
     visibility: hidden;
     animation: be 1s ease;
@@ -232,8 +236,6 @@ img {
 }
 
 #year2023 {
-    top: 155px;
-    left: 0;
     opacity: 0;
     visibility: hidden;
     animation: year 1s ease;
@@ -247,33 +249,27 @@ img {
     width: 100%;
     font-size: 36px;
     text-align: center;
-    /* top: 2px;
-    left: 40%; */
-    /* margin: 0 auto; */
-    margin: 32px 0;
+    /* margin: 32px 0; */
     animation: hash 1.5s ease 1;
     animation-delay: 6.5s;
     animation-fill-mode: forwards;
-
+    margin:0px;
 }
 
+
 #invitedPersons {
+    visibility: hidden;
     text-align: center;
-    position: absolute;
-    font-size: larger;
-    font-weight: bolder;
-    font-style: italic;
+    font-weight:bold;
     border: 1px solid pink;
     width: fit-content;
-
     height: fit-content;
     border-radius: 5%;
-    padding: 2% 3%;
-    padding-bottom: .1em;
-    top: 20%;
-    left: 30%;
+    /* padding: 2% 3%; */
+    padding: 5px 8px;
+    background: rgba(193, 97, 202, 0.685);
+    text-shadow: 0 0 5px black;
 
-    background: rgba(249, 249, 93, 0.246);
 }
 
 #close {
@@ -284,27 +280,37 @@ img {
 }
 
 #rsvp a {
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: none;
+    font-weight: bolder;
+    color:whitesmoke;
+    
+}
 
-    font-size: 1.3rem;
+#rsvp a:focus{
+    color:violet;
 }
 
 #rsvp {
-    font-size: 1.3rem;
+   font-size:20px;
 }
 
-#rsvpSection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 #eventTitle {
     text-decoration: underline;
+    margin-top:0px;
+    padding-top:0px;
+    font-style:italic;
 }
 
 .furtherDetails {
     color: rgb(34, 32, 35);
     text-decoration: underline;
+    text-shadow: none;
+    margin-left:20px;
+    font-size:20px;
+
 }
 
 #close:hover,
@@ -315,13 +321,12 @@ img {
 .button {
     display: inline-block;
     color: white;
+    transform: scale(.9);
     text-decoration: none;
     background: rgba(147, 103, 201, 0.246);
-    /* position: absolute; */
-    /* top: 230px;
-    left: 85px; */
-    margin-top:8px;
-    opacity: 0;
+    margin-top:-4px;
+    margin-left:-8px;
+    /* opacity: 0; */
     font-size: large;
     font-weight: bold;
     border: 2px white solid;
@@ -415,11 +420,14 @@ img {
 @keyframes bells {
     0% {
         visibility: hidden;
+        margin-left: 0px;
+        
     }
 
     100% {
         visibility: visible;
         opacity: 1;
+        margin-left:15px;
         left: 100px
     }
 }
@@ -427,36 +435,40 @@ img {
 @keyframes two {
     0% {
         visibility: hidden;
+        margin-left: 0px;
     }
 
     100% {
         visibility: visible;
         opacity: 1;
         left: 130px;
+        margin-left:33px;
     }
 }
 
 @keyframes be {
     0% {
         visibility: hidden;
+        margin-left:0px;
     }
 
     100% {
         visibility: visible;
         opacity: 1;
-        left: 115px
+        margin-left:25px;
     }
 }
 
 @keyframes year {
     0% {
         visibility: hidden;
+        margin-left:0px;
     }
 
     100% {
         visibility: visible;
         opacity: 1;
-        left: 92px
+        margin-left:12px;
     }
 }
 
@@ -500,19 +512,21 @@ img {
     .memoryLane {
         grid-template-columns: repeat(1, 1fr);
     }
+    #hashtag{
+        font-size:smaller;
+        text-align: left;
+        color: red;
+    }
 }
 
 .memory {
     padding: 12px 0;
-    /* background: blue; */
-    /* border: 5px solid green; */
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
 .memories {
-    /* border: 3px green solid; */
     color: white;
     border-radius: 50%;
     width: 180px;
@@ -545,7 +559,6 @@ img {
     image-rendering: optimizeQuality;
     background-size: cover;
     background-position: 0px 52%;
-    /* margin-right:px; */
 }
 
 h3 {
@@ -571,7 +584,6 @@ h3 {
 .comments {
     background: rgba(216, 216, 216, 0.481);
     border-radius: 30%;
-    /* width: 20%; */
     margin-top: 16px;
     width: 80%;
     display: flex;
@@ -580,7 +592,6 @@ h3 {
     color: rgb(0, 0, 0);
     text-shadow: 0 0 8px white;
     min-height: 200px;
-    /* height: fit-content; */
 }
 
 
@@ -625,7 +636,7 @@ h3 {
     align-items: center;
     margin-top: 6%;
     width: 40%;
-    height: 275px;
+    height: 310px;
     border-radius: 8%;
     color: white;
     font-weight: bolder;
@@ -646,7 +657,7 @@ h3 {
     font-weight: bolder;
     font-size: large;
     border-radius: 8%;
-    height: 275px;
+    height: 310px;
     background: rgba(128, 128, 128, 0.486);
 }
 
