@@ -46,24 +46,23 @@ html, body {
 #masterContainer {
     width: 100%;
     height: fit-content;
-    /* background: linear-gradient(#9ba9ff, #b9b5ff, #e2c6ff); */
-    background: red;
+    background: linear-gradient(#9ba9ff, #b9b5ff, #e2c6ff);
     padding: 8px;
-    /* margin: 0; */
-    /* margin: 0 auto; */
     
 }
 
-@media screen and (max-width:640px){
-    #masterContainer {
-    }
-}
+#firstSection {
+    position: relative;
+    background-image: url('/img/invite.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 2% 20%;
+    color: white;
+    font-size: x-large;
+    height: fit-content;
+    border-radius: 3%;
+    padding: 0 18px;
 
-@media only screen and (max-width:640px){
-    /* #masterContainer{
-        width:100;
-        min-width: 500px;
-    } */
 }
 
 #secondSection {
@@ -74,7 +73,6 @@ html, body {
     padding: 1px 0px;
     background: whitesmoke;
     background-image: url("/img/pics/sunset.jpg");
-    background-position-y: -80px;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -146,21 +144,7 @@ img {
     padding-bottom: 1%;
 }
 
-#firstSection {
-    /* width: 100%; */
-    position: relative;
-    background-image: url('/img/invite.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 2% 20%;
-    color: white;
-    font-size: x-large;
-    /* height: 350px; */
-    height: fit-content;
-    border-radius: 3%;
-    padding: 0 18px;
 
-}
 
 .welcome-text {
     padding-left: 24px;
