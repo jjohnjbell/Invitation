@@ -14,21 +14,20 @@ html, body {
 
 
 
-@keyframes hearts {
+/* @keyframes hearts {
     0% {
         background-position: 0% 80%;
         background-image: url('https://divi.space/wp-content/uploads/2019/02/hearts.png');
     }
 
 
-}
+} */
 
 #mainPartition{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    gap: 5px;
-    margin-top:15px;
+    /* margin-top:15px; */
     padding:0px;
     height:fit-content;
     
@@ -52,8 +51,8 @@ html, body {
 }
 
 #masterContainer {
-    width: 100%;
-    min-width: 420px;
+    width: fit-content;
+    /* min-width: 420px; */
     height: fit-content;
     background: linear-gradient(#9ba9ff, #b9b5ff, #e2c6ff);
     padding: 8px;
@@ -61,7 +60,6 @@ html, body {
 }
 
 #firstSection {
-    /* position: relative; */
     background-image: url('/img/invite.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -171,19 +169,20 @@ img {
 
 
 .welcome-text {
-    padding-left: 24px;
+    /* padding-left: 24px; */
     margin: 0;
-    height: fit-content;
+    height: 100%;
     padding-bottom: 16px;
     margin-top:0px;
 }
 
-#details h1 {
+/* #details h1 {
     position: absolute;
     top: 0px;
     left: 45%;
+    color:red;
     font-style: italic;
-}
+} */
 
 .updateTitle {
     font-style: italic;
@@ -258,11 +257,12 @@ img {
 
 
 #invitedPersons {
-    visibility: hidden;
+    /* display:inline; */
+    /* visibility: hidden; */
     text-align: center;
     font-weight:bold;
     border: 1px solid pink;
-    width: fit-content;
+    /* width: ; */
     height: fit-content;
     border-radius: 5%;
     /* padding: 2% 3%; */
@@ -326,7 +326,7 @@ img {
     background: rgba(147, 103, 201, 0.246);
     margin-top:-4px;
     margin-left:-8px;
-    /* opacity: 0; */
+    opacity: 0;
     font-size: large;
     font-weight: bold;
     border: 2px white solid;
@@ -512,10 +512,12 @@ img {
     .memoryLane {
         grid-template-columns: repeat(1, 1fr);
     }
-    #hashtag{
-        font-size:smaller;
-        text-align: left;
-        color: red;
+
+    #firstSection {
+        background-image: url('/img/invite.jpeg');
+        background-size:fit-content;
+        /* background-repeat: no-repeat;
+        background-position: 2% 80%; */
     }
 }
 
@@ -663,7 +665,7 @@ h3 {
 
 #bankInfo {
     color: white;
-    font-weight: bolder;
+    font-weight: bold;
     text-shadow: 0 0 10px black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
