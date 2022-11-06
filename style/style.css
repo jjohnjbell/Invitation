@@ -258,7 +258,7 @@ img {
 
 #invitedPersons {
     /* display:inline; */
-    /* visibility: hidden; */
+    visibility: hidden;
     text-align: center;
     font-weight:bold;
     border: 1px solid pink;
