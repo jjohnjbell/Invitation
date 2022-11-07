@@ -128,11 +128,10 @@ html, body {
 }
 
 .textResponses {
-    width: 40%;
-    height: 200px;
+    width: 350px;
+    height: 110px;
     overflow-y:auto;
     background-color: rgb(206, 206, 206);
-    padding: 8% 5%;
     border-radius: 6%;
     font-size: large;
     opacity: .8;
