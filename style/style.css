@@ -413,6 +413,26 @@ img {
     }
 }
 
+
+@keyframes clickMe {
+    0% {
+        border:5px solid;
+        border-color: silver;
+
+    }
+
+    50% {
+        border:2px solid;
+        border-color: rgb(170, 74, 207);
+    }
+
+    100% {
+        border:5px solid;
+
+        border-color: rgb(237, 238, 230);
+    }
+}
+
 @keyframes bells {
     0% {
         visibility: hidden;
@@ -533,7 +553,8 @@ img {
     border-radius: 50%;
     width: 180px;
     height: 180px;
-    border: 2px rgb(210, 209, 210) solid;
+    /* border: 2px rgb(210, 209, 210) solid; */
+    animation: clickMe 1.5s infinite forwards ease-in-out;
 }
 
 
