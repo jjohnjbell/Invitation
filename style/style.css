@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    /* border:1px solid red; */
 }
 
 html, body {
@@ -12,6 +13,14 @@ html, body {
     background: linear-gradient(#9ba9ff, #b9b5ff, #e2c6ff);
 }
 
+
+body{
+    display:flex;
+    justify-content: center;
+}
+#floatingTexts{
+    margin-left: 70px;
+}
 
 
 /* @keyframes hearts {
@@ -52,6 +61,7 @@ html, body {
 
 #masterContainer {
     width: fit-content;
+    max-width: 1024px;
     /* min-width: 420px; */
     height: fit-content;
     background: linear-gradient(#9ba9ff, #b9b5ff, #e2c6ff);
