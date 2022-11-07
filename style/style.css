@@ -134,7 +134,7 @@ html, body {
     background-color: rgb(206, 206, 206);
     padding: 8% 5%;
     border-radius: 6%;
-    font-size: larger;
+    font-size: large;
     opacity: .8;
 }
 
@@ -526,9 +526,13 @@ img {
         background-size:fit-content;
     }
 
+    #floatingTexts{
+        margin-left:10px;
+    }
 
     #mainPartition{
         margin-top:15px;
+        gap: 50px;
     }
 
 
