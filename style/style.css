@@ -373,6 +373,7 @@ img {
     100% {
         opacity: 1;
         transform: scale(1);
+        font-size: 35px;
         text-decoration: underline;
     }
 }
@@ -568,7 +569,7 @@ img {
         margin-top:15px;
         grid-template-columns: repeat(1,1fr);
         width:90%;
-        margin-left:-18px;
+        margin-left:-13px;
         /* gap: 50px; */
         /* justify-content: space-around; */
     }
