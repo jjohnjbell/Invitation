@@ -3,6 +3,9 @@ const hashTag = document.getElementById("hashTag")
 const bellsEl = document.getElementById("bells")
 const weddingLocation = document.getElementById("invitedPersons")
 const closeEl = document.getElementById("close")
+const modalBtn = document.getElementById("modalBtn")
+const invitationModal = document.getElementById("invitationModal")
+const myVid = document.getElementsByTagName("video")
 
 // bellsEl.addEventListener("dblclick", function(){
 //     console.log("Pressed")
@@ -17,4 +20,9 @@ const closeEl = document.getElementById("close")
 closeEl.addEventListener("click",function(){
     // weddingLocation.style.visibility="hidden"
     weddingLocation.style.display="none"
+})
+
+modalBtn.addEventListener("click", function(){
+    invitationModal.style.display="none"
+    myVid.pause()
 })
