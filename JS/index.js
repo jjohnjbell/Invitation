@@ -5,7 +5,7 @@ const weddingLocation = document.getElementById("invitedPersons")
 const closeEl = document.getElementById("close")
 const modalBtn = document.getElementById("modalBtn")
 const invitationModal = document.getElementById("invitationModal")
-const myVid = document.getElementsByTagName("video")
+const myVid = document.getElementById("vidPlayer")
 
 // bellsEl.addEventListener("dblclick", function(){
 //     console.log("Pressed")
@@ -22,7 +22,13 @@ closeEl.addEventListener("click",function(){
     weddingLocation.style.display="none"
 })
 
-modalBtn.addEventListener("click", function(){
+modalBtn.addEventListener("click", function(e){
     invitationModal.style.display="none"
     myVid.pause()
+    myVid.currentTime=0
+})
+
+hashTag.addEventListener("click", function(){
+   
+    invitationModal.style.display="block"
 })
