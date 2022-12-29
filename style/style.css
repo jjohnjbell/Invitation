@@ -32,6 +32,7 @@ html, body {
 #videoCont{
     border:2px solid red;
     position: relative;
+    top:30vh;
     width: 100%;
     display: flex;
     margin:0;

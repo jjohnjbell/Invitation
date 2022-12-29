@@ -31,4 +31,6 @@ modalBtn.addEventListener("click", function(e){
 hashTag.addEventListener("click", function(){
    
     invitationModal.style.display="block"
+    myVid.play()
+    
 })
