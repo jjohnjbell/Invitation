@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    /* border:1px solid red; */
+    border:1px solid red;
 }
 
 html, body {
@@ -14,7 +14,7 @@ html, body {
 }
 
 
-label[for=fname]{
+label[for=fname]{ 
     color:whitesmoke;
     font-size:large;
     
@@ -44,10 +44,18 @@ label[for=fname]{
     margin:0;
     padding:0;
     justify-content: center;
+    align-items: center;
 }
 
 .videoContainer{
     width:fit-content;
+    
+}
+
+#notInvitedPersons{
+    width:fit-content;
+    display:flex;
+    justify-content: center;
 }
 
 video{
@@ -849,4 +857,3 @@ h3 {
     box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
 
 }
-

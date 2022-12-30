@@ -13,7 +13,8 @@ let fname = document.getElementById("fname")
 let videoCont = document.getElementById("videoCont")
 const userInputContainer = document.getElementById("userInputContainer")
 const verifyBtn = document.getElementById("verifyBtn")
-const invitedList = ["Joshua", "Shae"]
+const closeVerifyBtn = document.getElementById("closeVerifyBtn")
+const invitedList = ["joshua", "shae"]
 
 // bellsEl.addEventListener("dblclick", function(){
 //     console.log("Pressed")
@@ -40,29 +41,45 @@ closeEl.addEventListener("click", function () {
 })
 
 modalBtn.addEventListener("click", function () {
+    reset()
+    console.log("pressing the X")
+})
+
+function reset() {
     invitationModal.style.display = "none"
     myVid1.pause()
     myVid2.pause()
     myVid1.currentTime = 0
     myVid2.currentTime = 0
-})
+    invitedPersons.style.display = "none"
+    notInvitedPersons.style.display = "none"
+    userInputContainer.style.display = "block"
+    fname.value = ""
+}
 
 hashTag.addEventListener("click", function (e) {
-
     invitationModal.style.display = "block"
-    verifyBtn.addEventListener("click", function(){
-        if (fname.value.toLowerCase() === "joshua"){
-            console.log("working")
-        }else{
-            console.log("not working")
-        }
-    })
-    
-    // notInvitedPersons.style.display="block"
-    // myVid2.style.display="block"
-    // myVid2.play()
-
 })
 
+verifyBtn.addEventListener("click", function () {
+    if (invitedList.includes(fname.value.toLowerCase())) {
+        userInputContainer.style.display = "none"
+        invitedPersons.style.display = "block"
+        myVid1.play()
+
+    } else {
+        userInputContainer.style.display = "none"
+        invitedPersons.style.display = "block"
+        invitedPersons.innerHTML = ` <video id="vidPlayer2" controls>
+        <source src="img/Video/notinvited.mp4" type="video/mp4">
+        Your device/browser does not support
+    </video>
+    <button style = "z-index:4" id="modalBtn">X</button>`
+    }
+})
+
+closeVerifyBtn.addEventListener("click", function () {
+    reset()
+})
 
 
