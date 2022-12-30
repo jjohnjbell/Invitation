@@ -11,7 +11,8 @@ const myVid1 = document.getElementById("vidPlayer1")
 const myVid2 = document.getElementById("vidPlayer2")
 let fname = document.getElementById("fname")
 let videoCont = document.getElementById("videoCont")
-let newForm = document.myForm.fname
+const userInputContainer = document.getElementById("userInputContainer")
+const verifyBtn = document.getElementById("verifyBtn")
 const invitedList = ["Joshua", "Shae"]
 
 // bellsEl.addEventListener("dblclick", function(){
@@ -38,7 +39,7 @@ closeEl.addEventListener("click", function () {
     weddingLocation.style.display = "none"
 })
 
-modalBtn.addEventListener("click", function (e) {
+modalBtn.addEventListener("click", function () {
     invitationModal.style.display = "none"
     myVid1.pause()
     myVid2.pause()
@@ -47,7 +48,15 @@ modalBtn.addEventListener("click", function (e) {
 })
 
 hashTag.addEventListener("click", function (e) {
+
     invitationModal.style.display = "block"
+    verifyBtn.addEventListener("click", function(){
+        if (fname.value.toLowerCase() === "joshua"){
+            console.log("working")
+        }else{
+            console.log("not working")
+        }
+    })
     
     // notInvitedPersons.style.display="block"
     // myVid2.style.display="block"
@@ -55,12 +64,5 @@ hashTag.addEventListener("click", function (e) {
 
 })
 
-function verify(e){
-    e.preventDefault
-    if (newForm.value.toLowerCase() === "test"){
-        console.log(newForm.value)
-    }else{
-        console.log("nope")
-    }
-}
+
 
