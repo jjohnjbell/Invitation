@@ -17,17 +17,50 @@
 
     <div id="masterContainer">
 
+
+        <!-- Modal for invitation -->
+
         <div id="invitationModal" style="display:none">
 
+            <!-- Video invitation Container -->
             <div id="videoCont">
-                <video id="vidPlayer" controls>
-                    <source src="img/Video/inviteVideo.mp4" type="video/mp4">
-                    Your device/browser does not support
-                    
-                </video>
+
+                <!-- Verification form -->
+                <div id="myForm">
+                    <form>
+                        <label for="fname">Your Name</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        <input type="submit" value="View!">
+                    </form>
+                </div>
+                <!-- End of Verification form -->
+                <!-- Video invitation -->
+                <div class="videoContainer" id="invitedPersons" style="display:none">
+                    <video id="vidPlayer1" controls>
+                        <source src="img/Video/inviteVideo.mp4" type="video/mp4">
+                        Your device/browser does not support
+                    </video>
+                </div>
+                <!-- End of Video invitation -->
+
+                <!-- Decoy Container -->
+                <div class="videoContainer" id="notInvitedPersons" style="display:none">
+                    <video id="vidPlayer2" controls>
+                        <source src="img/Video/notinvited.mp4" type="video/mp4">
+                        Your device/browser does not support
+                    </video>
+                </div>
+                <!-- End of Decoy Container -->
+
                 <button id="modalBtn">X</button>
             </div>
+            <!-- End of Video inviation Container -->
+
+
         </div>
+
+        <!-- End of Modal for inviation -->
+
 
         <div class="boxShadow" id="firstSection">
             <div class="invitation" id="hashTag">#HearTheBells!</div>

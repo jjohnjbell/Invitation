@@ -5,7 +5,12 @@ const weddingLocation = document.getElementById("invitedPersons")
 const closeEl = document.getElementById("close")
 const modalBtn = document.getElementById("modalBtn")
 const invitationModal = document.getElementById("invitationModal")
-const myVid = document.getElementById("vidPlayer")
+const invitedPersons = document.getElementById("invitedPersons")
+const notInvitedPersons = document.getElementById("notInvitedPersons")
+const myVid1 = document.getElementById("vidPlayer1")
+const myVid2 = document.getElementById("vidPlayer2")
+let videoCont = document.getElementById("videoCont")
+const invitedList = ["Joshua", "Shae"]
 
 // bellsEl.addEventListener("dblclick", function(){
 //     console.log("Pressed")
@@ -17,6 +22,15 @@ const myVid = document.getElementById("vidPlayer")
 
 // })
 
+
+// let my = document.createElement('img')
+//                     delBtn.src = "/img/close.png"
+//                     delBtn.id = "closeIcon"
+//                     delBtn.style.width = "18px"
+//                     delBtn.style.height = "18px"
+//                     delBtn.title = "Delete this item"
+//                     delBtn.className = "resultSetBtn"
+
 closeEl.addEventListener("click",function(){
     // weddingLocation.style.visibility="hidden"
     weddingLocation.style.display="none"
@@ -24,13 +38,19 @@ closeEl.addEventListener("click",function(){
 
 modalBtn.addEventListener("click", function(e){
     invitationModal.style.display="none"
-    myVid.pause()
-    myVid.currentTime=0
+    myVid1.pause()
+    myVid2.pause()
+    myVid1.currentTime=0
+    myVid2.currentTime=0
 })
 
 hashTag.addEventListener("click", function(){
    
     invitationModal.style.display="block"
-    myVid.play()
+    // notInvitedPersons.style.display="block"
+    // myVid2.style.display="block"
+    // myVid2.play()
+
+   
     
 })
