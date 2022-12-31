@@ -34,11 +34,10 @@ label[for=fname]{
 }
 
 
-/* #invitedPersons{
-    display:flex;
-    justify-content: center;
-    width:800px;
-} */
+#invitedPersons{
+    margin: 90px auto;
+    text-align: center;
+}
 
 #userInputContainer{
     width: fit-content;
@@ -52,10 +51,10 @@ label[for=fname]{
 }
 
 video{
-    width:50%;
-    height:fit-content;
-    margin: 0 auto;
-    padding:0;
+    width:500px;
+    /* height:fit-content;
+    margin: auto auto; */
+
 }
 
 #modalBtn{
@@ -665,17 +664,6 @@ img {
       margin: 9px 0;
     }
     
-    /* #invitedPersons {
-        text-align: center;
-        font-weight:bold;
-        height: fit-content;
-        border-radius: 5%;
-        border-left:-10px;
-        padding: 5px 8px;
-        padding-right:10px;
-        background: rgba(193, 97, 202, 0.685);
-        width:95%;
-    } */
  
 
 

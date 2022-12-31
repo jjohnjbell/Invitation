@@ -15,8 +15,8 @@ const verifyBtn = document.getElementById("verifyBtn")
 const closeVerifyBtn = document.getElementById("closeVerifyBtn")
 const invitedList = ["joshua", "shae"]
 
-closeVerifyBtn.addEventListener("click", function(){
-    invitationModal.style.display="none"
+closeVerifyBtn.addEventListener("click", function () {
+    invitationModal.style.display = "none"
 })
 
 hashTag.addEventListener("click", function (e) {
@@ -24,6 +24,10 @@ hashTag.addEventListener("click", function (e) {
 })
 
 verifyBtn.addEventListener("click", function () {
+    if (invitedList.includes(fname.value.toLowerCase())){
+        invitedPersons.style.display="block"
+        userInputContainer.style.display="none"
+    }
 })
 
 
