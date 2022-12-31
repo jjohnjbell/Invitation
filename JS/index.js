@@ -28,19 +28,25 @@ verifyBtn.addEventListener("click", function () {
     
     if (invitedList.includes(fname.value.toLowerCase())){
         invitedPersons.style.display="block"
+        myVid1.autoplay=true
         myVid1.style.display="inline-block"
         myVid1.currentTime=0
-        myVid1.style.autoplay
+        myVid1.play()
+
         myVid2.style.display="none"
         myVid2.currentTime=0
         myVid2.pause()
         userInputContainer.style.display="none"
     }else{
         invitedPersons.style.display="block"
+        myVid2.autoplay=true
+        myVid2.play()
         myVid2.style.display="inline-block"
         myVid2.currentTime=0
+
         myVid1.style.display="none"
-        myVid2.style.autoplay
+        myVid1.pause()
+        myVid1.currentTime=0
         userInputContainer.style.display="none"
 
     }
