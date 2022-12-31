@@ -590,6 +590,11 @@ img {
 }
 
 @media screen and (max-width: 640px) {
+
+    video{
+        width:80vw;
+    }
+
     .memoryLane {
         grid-template-columns: repeat(1, 1fr);
         margin-top:100px;
