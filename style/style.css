@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 
 html, body {
@@ -35,9 +35,12 @@ label[for=fname]{
 
 
 #invitedPersons{
-    margin: 90px auto;
+    margin: 100px auto;
     text-align: center;
+    /* display:flex;
+    justify-content: center; */
 }
+
 
 #userInputContainer{
     width: fit-content;
@@ -306,11 +309,17 @@ img {
 }
 
 
+#closingBtn{
+    background:whitesmoke;
+    border:none;
+    padding:1px 5px;
+    font-weight:bold;
+}
+
+
 #close {
     cursor: pointer;
     font-size: smaller;
-
-
 }
 
 #rsvp a {
@@ -781,10 +790,11 @@ h3 {
 }
 
 #registryThanks {
-    display: flex;
-    padding: 0 .8rem 0 .8rem;
+    display:flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    padding: 0 .8rem 0 .8rem;
     margin-top: 6%;
     width: 40%;
     height: 310px;
@@ -823,5 +833,11 @@ h3 {
 
 .boxShadow {
     box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+
+}
+
+#amznReg:hover, #amznReg{
+    color: violet;
+    
 
 }

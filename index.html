@@ -32,14 +32,21 @@
 
 
             <!-- Video invitation -->
-            <div  id="invitedPersons" style="display:none">
-                
-                <video id="vidPlayer1" controls>
+            <div id="invitedPersons" style="display:none">
+
+                <video id="vidPlayer1" style="display:none" controls>
                     <source src="img/Video/inviteVideo.mp4" type="video/mp4">
                     Your device/browser does not support
                 </video>
 
-                <!-- <button id="modalBtn">X</button> -->
+                <video id="vidPlayer2" style="display:none" controls>
+                    <source src="img/Video/notinvited.mp4" type="video/mp4">
+                    Your device/browser does not support
+                </video>
+
+                <button id="closingBtn">Close</button>
+
+
             </div>
             <!-- End of Video Invitation -->
 
@@ -154,7 +161,7 @@
 
 
         <div class="boxShadow" id="lastSection">
-            <h2> Registry Info</h2>
+            <h2> Registry</h2>
             <div id="registry">
 
                 <div class="boxShadow" id="registryDetails">
@@ -165,11 +172,16 @@
                 </div>
 
                 <div class="boxShadow" id="registryThanks">
-                    <p> <i>Thank you all for your contributions and well wishes.</i></p>
+                    <!-- <p>Amazon Registry</p> -->
+                    <p> <a id="amznReg" href="https://www.amazon.com/wedding/share/hearthebells2023" style="color:white" target="_blank"> Go to Amazon Registry!</a>
+                    <p> <i> Thank you all for your Prayers, contributions and well wishes! </i></p>
                 </div>
 
+
             </div>
+    
         </div>
+
 
 
 

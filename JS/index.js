@@ -13,6 +13,7 @@ let videoCont = document.getElementById("videoCont")
 const userInputContainer = document.getElementById("userInputContainer")
 const verifyBtn = document.getElementById("verifyBtn")
 const closeVerifyBtn = document.getElementById("closeVerifyBtn")
+const closingBtn=document.getElementById("closingBtn")
 const invitedList = ["joshua", "shae"]
 
 closeVerifyBtn.addEventListener("click", function () {
@@ -24,11 +25,41 @@ hashTag.addEventListener("click", function (e) {
 })
 
 verifyBtn.addEventListener("click", function () {
+    
     if (invitedList.includes(fname.value.toLowerCase())){
         invitedPersons.style.display="block"
+        myVid1.style.display="inline-block"
+        myVid1.currentTime=0
+        myVid1.style.autoplay
+        myVid2.style.display="none"
+        myVid2.currentTime=0
+        myVid2.pause()
         userInputContainer.style.display="none"
+    }else{
+        invitedPersons.style.display="block"
+        myVid2.style.display="inline-block"
+        myVid2.currentTime=0
+        myVid1.style.display="none"
+        myVid2.style.autoplay
+        userInputContainer.style.display="none"
+
     }
+
+    fname.value=""
+
 })
+
+closingBtn.addEventListener("click", function(){
+    invitationModal.style.display="none"
+    invitedPersons.style.display="none"
+    myVid1.pause()
+    myVid1.currentTime=0
+    myVid2.pause()
+    myVid2.currentTime=0
+    userInputContainer.style.display="block"
+
+})
+
 
 
 
