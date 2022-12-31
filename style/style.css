@@ -14,6 +14,67 @@ html, body {
 }
 
 
+label[for=fname]{ 
+    color:whitesmoke;
+    font-size:large;
+    
+}
+
+#invitationModal{
+    /* display:none; */
+    background-color: rgba(126, 120, 133, 0.735);
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    border:none;
+    z-index: 1;
+    padding:0;
+}
+
+
+#invitedPersons{
+    margin: 100px auto;
+    text-align: center;
+    /* display:flex;
+    justify-content: center; */
+}
+
+
+#userInputContainer{
+    width: fit-content;
+    margin: 150px auto;
+}
+
+#notInvitedPersons{
+    width:fit-content;
+    display:flex;
+    justify-content: center;
+}
+
+video{
+    width:500px;
+    /* height:fit-content;
+    margin: auto auto; */
+
+}
+
+#modalBtn{
+    position: absolute;
+    right:13%; 
+    top:0;
+    border:5px solid purple;
+    font-size:30px;
+    border:none;
+    /* padding:0 20px; */
+    background:none;
+    color:white;
+}
+
+/* #userInputContainer{
+    margin: auto auto;
+} */
 
 #floatingTexts{
     margin-left: 50px;
@@ -36,7 +97,7 @@ html, body {
 }
 
 #masterContainer {
-   
+
     width: fit-content;
     max-width:1024px;
     min-width: 280px;
@@ -248,25 +309,17 @@ img {
 }
 
 
-#invitedPersons {
-    /* visibility:hidden; */
-    display:none;
-    text-align: center;
+#closingBtn{
+    background:whitesmoke;
+    border:none;
+    padding:1px 5px;
     font-weight:bold;
-    border: 1px solid pink;
-    height: fit-content;
-    border-radius: 5%;
-    padding: 5px 8px;
-    background: rgba(193, 97, 202, 0.685);
-    text-shadow: 0 0 5px black;
-
 }
+
 
 #close {
     cursor: pointer;
     font-size: smaller;
-
-
 }
 
 #rsvp a {
@@ -620,18 +673,6 @@ img {
       margin: 9px 0;
     }
     
-    #invitedPersons {
-        /* visibility:hidden; */
-        text-align: center;
-        font-weight:bold;
-        height: fit-content;
-        border-radius: 5%;
-        border-left:-10px;
-        padding: 5px 8px;
-        padding-right:10px;
-        background: rgba(193, 97, 202, 0.685);
-        width:95%;
-    }
  
 
 
@@ -749,10 +790,11 @@ h3 {
 }
 
 #registryThanks {
-    display: flex;
-    padding: 0 .8rem 0 .8rem;
+    display:flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    padding: 0 .8rem 0 .8rem;
     margin-top: 6%;
     width: 40%;
     height: 310px;
@@ -791,5 +833,11 @@ h3 {
 
 .boxShadow {
     box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+
+}
+
+#amznReg:hover, #amznReg{
+    color: violet;
+    
 
 }
