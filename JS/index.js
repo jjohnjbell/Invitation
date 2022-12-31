@@ -14,7 +14,7 @@ const userInputContainer = document.getElementById("userInputContainer")
 const verifyBtn = document.getElementById("verifyBtn")
 const closeVerifyBtn = document.getElementById("closeVerifyBtn")
 const closingBtn=document.getElementById("closingBtn")
-const invitedList = ["joshua", "shae"]
+const invitedList = ["marie", "mernel", "shaunice", "junior", "princess", "rhonda", "andre", "radcliffe", "dawn", "rupert", "paulette", "nova", "clairlyn", "pauline", "sheldon", "codea", "jeffrey", "luke", "trudy", "shara", "andrew", "angelita", "ravenne"]
 
 closeVerifyBtn.addEventListener("click", function () {
     invitationModal.style.display = "none"
