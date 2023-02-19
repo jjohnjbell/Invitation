@@ -841,8 +841,6 @@ h3 {
 
 }
 
-#amznReg:hover, #amznReg{
+#amznReg:hover{
     color: violet;
-    
-
 }
